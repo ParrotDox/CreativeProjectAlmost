@@ -9,6 +9,7 @@ namespace Risovalka {
 	using namespace System::Data;
 	using namespace System::Drawing;
 	using namespace System::Collections::Generic;
+	using namespace System::Media;
 
 	/// <summary>
 	/// Сводка для MyForm
@@ -95,6 +96,20 @@ namespace Risovalka {
 	private: System::Windows::Forms::NumericUpDown^ numericUpDownCreateHeight;
 	private: System::Windows::Forms::NumericUpDown^ numericUpDownCreateWidth;
 	private: System::Windows::Forms::Button^ buttonCreate;
+	private: System::Windows::Forms::Label^ labelC;
+	private: System::Windows::Forms::Label^ labelB;
+
+
+	private: System::Windows::Forms::Label^ labelA;
+
+	private: System::Windows::Forms::Label^ labelG;
+
+	private: System::Windows::Forms::Label^ labelF;
+
+	private: System::Windows::Forms::Label^ labelE;
+
+	private: System::Windows::Forms::Label^ labelD;
+
 
 
 
@@ -150,6 +165,13 @@ namespace Risovalka {
 			this->InnerRightGroupBox = (gcnew System::Windows::Forms::GroupBox());
 			this->splitContainer2 = (gcnew System::Windows::Forms::SplitContainer());
 			this->pictureBoxPalette = (gcnew System::Windows::Forms::PictureBox());
+			this->labelB = (gcnew System::Windows::Forms::Label());
+			this->labelA = (gcnew System::Windows::Forms::Label());
+			this->labelG = (gcnew System::Windows::Forms::Label());
+			this->labelF = (gcnew System::Windows::Forms::Label());
+			this->labelE = (gcnew System::Windows::Forms::Label());
+			this->labelD = (gcnew System::Windows::Forms::Label());
+			this->labelC = (gcnew System::Windows::Forms::Label());
 			this->ButtonPurple = (gcnew System::Windows::Forms::Button());
 			this->ButtonBlue = (gcnew System::Windows::Forms::Button());
 			this->ButtonCyan = (gcnew System::Windows::Forms::Button());
@@ -225,28 +247,28 @@ namespace Risovalka {
 			// createToolStripMenuItem
 			// 
 			this->createToolStripMenuItem->Name = L"createToolStripMenuItem";
-			this->createToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->createToolStripMenuItem->Size = System::Drawing::Size(147, 22);
 			this->createToolStripMenuItem->Text = L"Create canvas";
 			this->createToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::createToolStripMenuItem_Click);
 			// 
 			// saveAsToolStripMenuItem
 			// 
 			this->saveAsToolStripMenuItem->Name = L"saveAsToolStripMenuItem";
-			this->saveAsToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->saveAsToolStripMenuItem->Size = System::Drawing::Size(147, 22);
 			this->saveAsToolStripMenuItem->Text = L"Save as";
 			this->saveAsToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::saveAsToolStripMenuItem_Click);
 			// 
 			// openFileToolStripMenuItem
 			// 
 			this->openFileToolStripMenuItem->Name = L"openFileToolStripMenuItem";
-			this->openFileToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->openFileToolStripMenuItem->Size = System::Drawing::Size(147, 22);
 			this->openFileToolStripMenuItem->Text = L"Open file";
 			this->openFileToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::openFileToolStripMenuItem_Click);
 			// 
 			// clearCanvasToolStripMenuItem
 			// 
 			this->clearCanvasToolStripMenuItem->Name = L"clearCanvasToolStripMenuItem";
-			this->clearCanvasToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->clearCanvasToolStripMenuItem->Size = System::Drawing::Size(147, 22);
 			this->clearCanvasToolStripMenuItem->Text = L"Clear canvas";
 			this->clearCanvasToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::clearCanvasToolStripMenuItem_Click);
 			// 
@@ -259,6 +281,7 @@ namespace Risovalka {
 			this->soundModeToolStripMenuItem->Name = L"soundModeToolStripMenuItem";
 			this->soundModeToolStripMenuItem->Size = System::Drawing::Size(87, 20);
 			this->soundModeToolStripMenuItem->Text = L"Sound mode";
+			this->soundModeToolStripMenuItem->Visible = false;
 			// 
 			// freeToolStripMenuItem
 			// 
@@ -425,14 +448,14 @@ namespace Risovalka {
 			this->numericUpDownBrushSize->Name = L"numericUpDownBrushSize";
 			this->numericUpDownBrushSize->Size = System::Drawing::Size(87, 20);
 			this->numericUpDownBrushSize->TabIndex = 0;
-			this->numericUpDownBrushSize->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
+			this->numericUpDownBrushSize->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 5, 0, 0, 0 });
 			this->numericUpDownBrushSize->ValueChanged += gcnew System::EventHandler(this, &PaintForm::numericUpDownBrushSize_ValueChanged);
 			// 
 			// labelShape
 			// 
 			this->labelShape->AutoSize = true;
 			this->labelShape->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
-			this->labelShape->Location = System::Drawing::Point(18, 8);
+			this->labelShape->Location = System::Drawing::Point(3, 5);
 			this->labelShape->Name = L"labelShape";
 			this->labelShape->Size = System::Drawing::Size(48, 15);
 			this->labelShape->TabIndex = 5;
@@ -443,7 +466,7 @@ namespace Risovalka {
 			// 
 			this->labelWidth->AutoSize = true;
 			this->labelWidth->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
-			this->labelWidth->Location = System::Drawing::Point(18, 53);
+			this->labelWidth->Location = System::Drawing::Point(2, 50);
 			this->labelWidth->Name = L"labelWidth";
 			this->labelWidth->Size = System::Drawing::Size(49, 15);
 			this->labelWidth->TabIndex = 6;
@@ -454,7 +477,7 @@ namespace Risovalka {
 			// 
 			this->labelLength->AutoSize = true;
 			this->labelLength->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
-			this->labelLength->Location = System::Drawing::Point(18, 29);
+			this->labelLength->Location = System::Drawing::Point(9, 26);
 			this->labelLength->Name = L"labelLength";
 			this->labelLength->Size = System::Drawing::Size(43, 15);
 			this->labelLength->TabIndex = 5;
@@ -464,7 +487,7 @@ namespace Risovalka {
 			// 
 			// numericUpDownWidth
 			// 
-			this->numericUpDownWidth->Location = System::Drawing::Point(73, 53);
+			this->numericUpDownWidth->Location = System::Drawing::Point(58, 50);
 			this->numericUpDownWidth->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 150, 0, 0, 0 });
 			this->numericUpDownWidth->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 10, 0, 0, 0 });
 			this->numericUpDownWidth->Name = L"numericUpDownWidth";
@@ -475,7 +498,7 @@ namespace Risovalka {
 			// 
 			// numericUpDownLength
 			// 
-			this->numericUpDownLength->Location = System::Drawing::Point(73, 29);
+			this->numericUpDownLength->Location = System::Drawing::Point(58, 26);
 			this->numericUpDownLength->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 150, 0, 0, 0 });
 			this->numericUpDownLength->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 10, 0, 0, 0 });
 			this->numericUpDownLength->Name = L"numericUpDownLength";
@@ -493,7 +516,7 @@ namespace Risovalka {
 			this->InnerRightGroupBox->Size = System::Drawing::Size(350, 102);
 			this->InnerRightGroupBox->TabIndex = 1;
 			this->InnerRightGroupBox->TabStop = false;
-			this->InnerRightGroupBox->Text = L"Palette";
+			this->InnerRightGroupBox->Text = L"Note Palette";
 			// 
 			// splitContainer2
 			// 
@@ -507,6 +530,13 @@ namespace Risovalka {
 			// 
 			// splitContainer2.Panel2
 			// 
+			this->splitContainer2->Panel2->Controls->Add(this->labelB);
+			this->splitContainer2->Panel2->Controls->Add(this->labelA);
+			this->splitContainer2->Panel2->Controls->Add(this->labelG);
+			this->splitContainer2->Panel2->Controls->Add(this->labelF);
+			this->splitContainer2->Panel2->Controls->Add(this->labelE);
+			this->splitContainer2->Panel2->Controls->Add(this->labelD);
+			this->splitContainer2->Panel2->Controls->Add(this->labelC);
 			this->splitContainer2->Panel2->Controls->Add(this->ButtonPurple);
 			this->splitContainer2->Panel2->Controls->Add(this->ButtonBlue);
 			this->splitContainer2->Panel2->Controls->Add(this->ButtonCyan);
@@ -526,10 +556,80 @@ namespace Risovalka {
 			this->pictureBoxPalette->TabIndex = 0;
 			this->pictureBoxPalette->TabStop = false;
 			// 
+			// labelB
+			// 
+			this->labelB->AutoSize = true;
+			this->labelB->Font = (gcnew System::Drawing::Font(L"Dubai", 14, System::Drawing::FontStyle::Bold));
+			this->labelB->Location = System::Drawing::Point(225, 42);
+			this->labelB->Name = L"labelB";
+			this->labelB->Size = System::Drawing::Size(26, 32);
+			this->labelB->TabIndex = 13;
+			this->labelB->Text = L"B";
+			// 
+			// labelA
+			// 
+			this->labelA->AutoSize = true;
+			this->labelA->Font = (gcnew System::Drawing::Font(L"Dubai", 14, System::Drawing::FontStyle::Bold));
+			this->labelA->Location = System::Drawing::Point(188, 42);
+			this->labelA->Name = L"labelA";
+			this->labelA->Size = System::Drawing::Size(27, 32);
+			this->labelA->TabIndex = 12;
+			this->labelA->Text = L"A";
+			// 
+			// labelG
+			// 
+			this->labelG->AutoSize = true;
+			this->labelG->Font = (gcnew System::Drawing::Font(L"Dubai", 14, System::Drawing::FontStyle::Bold));
+			this->labelG->Location = System::Drawing::Point(152, 42);
+			this->labelG->Name = L"labelG";
+			this->labelG->Size = System::Drawing::Size(26, 32);
+			this->labelG->TabIndex = 11;
+			this->labelG->Text = L"G";
+			// 
+			// labelF
+			// 
+			this->labelF->AutoSize = true;
+			this->labelF->Font = (gcnew System::Drawing::Font(L"Dubai", 14, System::Drawing::FontStyle::Bold));
+			this->labelF->Location = System::Drawing::Point(116, 42);
+			this->labelF->Name = L"labelF";
+			this->labelF->Size = System::Drawing::Size(24, 32);
+			this->labelF->TabIndex = 10;
+			this->labelF->Text = L"F";
+			// 
+			// labelE
+			// 
+			this->labelE->AutoSize = true;
+			this->labelE->Font = (gcnew System::Drawing::Font(L"Dubai", 14, System::Drawing::FontStyle::Bold));
+			this->labelE->Location = System::Drawing::Point(80, 42);
+			this->labelE->Name = L"labelE";
+			this->labelE->Size = System::Drawing::Size(24, 32);
+			this->labelE->TabIndex = 9;
+			this->labelE->Text = L"E";
+			// 
+			// labelD
+			// 
+			this->labelD->AutoSize = true;
+			this->labelD->Font = (gcnew System::Drawing::Font(L"Dubai", 14, System::Drawing::FontStyle::Bold));
+			this->labelD->Location = System::Drawing::Point(44, 42);
+			this->labelD->Name = L"labelD";
+			this->labelD->Size = System::Drawing::Size(27, 32);
+			this->labelD->TabIndex = 8;
+			this->labelD->Text = L"D";
+			// 
+			// labelC
+			// 
+			this->labelC->AutoSize = true;
+			this->labelC->Font = (gcnew System::Drawing::Font(L"Dubai", 14, System::Drawing::FontStyle::Bold));
+			this->labelC->Location = System::Drawing::Point(8, 42);
+			this->labelC->Name = L"labelC";
+			this->labelC->Size = System::Drawing::Size(25, 32);
+			this->labelC->TabIndex = 7;
+			this->labelC->Text = L"C";
+			// 
 			// ButtonPurple
 			// 
 			this->ButtonPurple->BackColor = System::Drawing::Color::Purple;
-			this->ButtonPurple->Location = System::Drawing::Point(220, 4);
+			this->ButtonPurple->Location = System::Drawing::Point(221, 11);
 			this->ButtonPurple->Name = L"ButtonPurple";
 			this->ButtonPurple->Size = System::Drawing::Size(30, 30);
 			this->ButtonPurple->TabIndex = 6;
@@ -539,7 +639,7 @@ namespace Risovalka {
 			// ButtonBlue
 			// 
 			this->ButtonBlue->BackColor = System::Drawing::Color::Blue;
-			this->ButtonBlue->Location = System::Drawing::Point(184, 4);
+			this->ButtonBlue->Location = System::Drawing::Point(185, 11);
 			this->ButtonBlue->Name = L"ButtonBlue";
 			this->ButtonBlue->Size = System::Drawing::Size(30, 30);
 			this->ButtonBlue->TabIndex = 5;
@@ -549,7 +649,7 @@ namespace Risovalka {
 			// ButtonCyan
 			// 
 			this->ButtonCyan->BackColor = System::Drawing::Color::Cyan;
-			this->ButtonCyan->Location = System::Drawing::Point(148, 4);
+			this->ButtonCyan->Location = System::Drawing::Point(149, 11);
 			this->ButtonCyan->Name = L"ButtonCyan";
 			this->ButtonCyan->Size = System::Drawing::Size(30, 30);
 			this->ButtonCyan->TabIndex = 4;
@@ -559,7 +659,7 @@ namespace Risovalka {
 			// ButtonGreen
 			// 
 			this->ButtonGreen->BackColor = System::Drawing::Color::Green;
-			this->ButtonGreen->Location = System::Drawing::Point(112, 4);
+			this->ButtonGreen->Location = System::Drawing::Point(113, 11);
 			this->ButtonGreen->Name = L"ButtonGreen";
 			this->ButtonGreen->Size = System::Drawing::Size(30, 30);
 			this->ButtonGreen->TabIndex = 3;
@@ -569,7 +669,7 @@ namespace Risovalka {
 			// ButtonYellow
 			// 
 			this->ButtonYellow->BackColor = System::Drawing::Color::Yellow;
-			this->ButtonYellow->Location = System::Drawing::Point(76, 4);
+			this->ButtonYellow->Location = System::Drawing::Point(77, 11);
 			this->ButtonYellow->Name = L"ButtonYellow";
 			this->ButtonYellow->Size = System::Drawing::Size(30, 30);
 			this->ButtonYellow->TabIndex = 2;
@@ -580,7 +680,7 @@ namespace Risovalka {
 			// 
 			this->ButtonOrange->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->ButtonOrange->Location = System::Drawing::Point(40, 4);
+			this->ButtonOrange->Location = System::Drawing::Point(41, 11);
 			this->ButtonOrange->Name = L"ButtonOrange";
 			this->ButtonOrange->Size = System::Drawing::Size(30, 30);
 			this->ButtonOrange->TabIndex = 1;
@@ -590,7 +690,7 @@ namespace Risovalka {
 			// ButtonRed
 			// 
 			this->ButtonRed->BackColor = System::Drawing::Color::Red;
-			this->ButtonRed->Location = System::Drawing::Point(4, 4);
+			this->ButtonRed->Location = System::Drawing::Point(5, 11);
 			this->ButtonRed->Name = L"ButtonRed";
 			this->ButtonRed->Size = System::Drawing::Size(30, 30);
 			this->ButtonRed->TabIndex = 0;
@@ -629,9 +729,9 @@ namespace Risovalka {
 			// comboBoxInstruments
 			// 
 			this->comboBoxInstruments->FormattingEnabled = true;
-			this->comboBoxInstruments->Items->AddRange(gcnew cli::array< System::Object^  >(5) {
-				L"Marimba", L"Piano", L"String", L"WoodWind",
-					L"Nature"
+			this->comboBoxInstruments->Items->AddRange(gcnew cli::array< System::Object^  >(6) {
+				L"None", L"Marimba", L"Piano", L"String",
+					L"WoodWind", L"Nature"
 			});
 			this->comboBoxInstruments->Location = System::Drawing::Point(7, 4);
 			this->comboBoxInstruments->Name = L"comboBoxInstruments";
@@ -642,9 +742,9 @@ namespace Risovalka {
 			// 
 			// pictureBoxInstrument
 			// 
-			this->pictureBoxInstrument->Location = System::Drawing::Point(7, 4);
+			this->pictureBoxInstrument->Location = System::Drawing::Point(7, 3);
 			this->pictureBoxInstrument->Name = L"pictureBoxInstrument";
-			this->pictureBoxInstrument->Size = System::Drawing::Size(184, 47);
+			this->pictureBoxInstrument->Size = System::Drawing::Size(184, 43);
 			this->pictureBoxInstrument->TabIndex = 0;
 			this->pictureBoxInstrument->TabStop = false;
 			// 
@@ -761,6 +861,7 @@ namespace Risovalka {
 			this->InnerRightGroupBox->ResumeLayout(false);
 			this->splitContainer2->Panel1->ResumeLayout(false);
 			this->splitContainer2->Panel2->ResumeLayout(false);
+			this->splitContainer2->Panel2->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->splitContainer2))->EndInit();
 			this->splitContainer2->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxPalette))->EndInit();
@@ -789,6 +890,7 @@ namespace Risovalka {
 		Bitmap^ image;
 		Graphics^ canvas;
 		Pen^ pen;
+		SoundPlayer^ audio_feedback;
 		
 	//Событие при запуске формы
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) 
@@ -802,6 +904,7 @@ namespace Risovalka {
 		image = gcnew Bitmap(pictureBoxCanvas->Width, pictureBoxCanvas->Height);
 		canvas = Graphics::FromImage(image);
 		pictureBoxCanvas->Image = image;
+		canvas->Clear(Color::White);
 		pictureBoxCanvas->BackColor = Color::White;
 	}
 	//События для меню холста

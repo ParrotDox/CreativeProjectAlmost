@@ -3,6 +3,7 @@ System::Void Risovalka::PaintForm::clearCanvasToolStripMenuItem_Click(System::Ob
 {
 	image = gcnew Bitmap(pictureBoxCanvas->Image->Width, pictureBoxCanvas->Image->Height);
 	canvas = Graphics::FromImage(image);
+	canvas->Clear(Color::White);
 	pictureBoxCanvas->Image = image;
 	return System::Void();
 }

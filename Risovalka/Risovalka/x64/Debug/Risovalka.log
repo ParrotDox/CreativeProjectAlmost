@@ -1,8 +1,8 @@
-﻿  ButtonPurple_Click.cpp
-  ButtonBlue_Click.cpp
+﻿  ButtonBlue_Click.cpp
   ButtonCyan_Click.cpp
   ButtonGreen_Click.cpp
   ButtonOrange_Click.cpp
+  ButtonPurple_Click.cpp
   ButtonRed_Click.cpp
   ButtonYellow_Click.cpp
   numericUpDownBrushSize_ValueChanged.cpp
@@ -17,12 +17,11 @@ C:\GIT\CreativeProjectAlmost\Risovalka\Events\Brush options events\Shape\numeric
   radioButtonSquare_CheckedChanged.cpp
   radioButtonTriangle_CheckedChanged.cpp
   comboBoxInstruments_SelectedIndexChanged.cpp
-  buttonCreate_Click.cpp
   pictureBoxCanvas_MouseDown.cpp
   pictureBoxCanvas_MouseMove.cpp
+  pictureBoxCanvas_MouseUp.cpp
   Создание кода...
   Компиляция...
-  pictureBoxCanvas_MouseUp.cpp
   pictureBoxCanvas_Paint.cpp
   pictureBoxCanvas_SizeChanged.cpp
   canvasToolStripMenuItem_Click.cpp
@@ -32,9 +31,9 @@ C:\GIT\CreativeProjectAlmost\Risovalka\Events\Brush options events\Shape\numeric
   saveAsToolStripMenuItem_Click.cpp
   freeToolStripMenuItem_Click.cpp
   steptsToolStripMenuItem_Click.cpp
+  buttonCreate_Click.cpp
   MyForm.cpp
 C:\GIT\CreativeProjectAlmost\Risovalka\MyForm.cpp(11,1): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   Создание кода...
   ButtonPurple_Click.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   Risovalka.vcxproj -> C:\GIT\CreativeProjectAlmost\Risovalka\x64\Debug\Risovalka.exe
