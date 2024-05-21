@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas events\\pictureBoxCanvas_Paint.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Canvas events\\pictureBoxCanvas_Paint.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas events\\pictureBoxCanvas_MouseMove.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Canvas events\\pictureBoxCanvas_MouseMove.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas events\\pictureBoxCanvas_MouseDown.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Canvas events\\pictureBoxCanvas_MouseDown.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -19,8 +11,39 @@
       "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Canvas events\\pictureBoxCanvas_MouseUp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas events\\pictureBoxCanvas_MouseMove.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Canvas events\\pictureBoxCanvas_MouseMove.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\buttonCreate_Click.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\buttonCreate_Click.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Sound Visualisation\\buttonShowVisualisation_Click.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Sound Visualisation\\buttonShowVisualisation_Click.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Sound Visualisation\\comboBoxSoundDiagramInstrument_SelectedIndexChanged.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Sound Visualisation\\comboBoxSoundDiagramInstrument_SelectedIndexChanged.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Sound menu\\freeToolStripMenuItem_Click.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Sound menu\\freeToolStripMenuItem_Click.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0415\u0433\u043E\u0440\\AppData\\Local\\Temp\\Rar$DIa11560.39505\\MainForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas events\\pictureBoxCanvas_Paint.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Canvas events\\pictureBoxCanvas_Paint.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\MyForm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -29,10 +52,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Shape\\radioButtonSquare_CheckedChanged.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Brush options events\\Shape\\radioButtonSquare_CheckedChanged.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:MyForm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\MyForm.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
@@ -94,10 +113,6 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u0415\u0433\u043E\u0440\\Downloads\\qwerty.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\buttonCreate_Click.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\buttonCreate_Click.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Shape\\numericUpDownBrushSize_ValueChanged.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5B93E285-7DE1-47DB-8CE8-5C1EC09C3C07}|Risovalka.vcxproj|solutionrelative:Events\\Brush options events\\Shape\\numericUpDownBrushSize_ValueChanged.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -131,11 +146,11 @@
         },
         {
           "DockedWidth": 836,
-          "SelectedChildIndex": 24,
+          "SelectedChildIndex": 31,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "MyForm.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\MyForm.cpp",
               "RelativeDocumentMoniker": "MyForm.cpp",
@@ -144,12 +159,25 @@
               "ViewState": "AQIAAAIAAAAAAAAAAADgvwcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-18T11:42:40.426Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MyForm.h",
+              "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\MyForm.h",
+              "RelativeDocumentMoniker": "MyForm.h",
+              "ToolTip": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\MyForm.h",
+              "RelativeToolTip": "MyForm.h",
+              "ViewState": "AQIAAO8DAAAAAAAAAAAAwP4DAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-20T16:49:17.755Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "MyForm.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\MyForm.h",
               "RelativeDocumentMoniker": "MyForm.h",
@@ -157,11 +185,64 @@
               "RelativeToolTip": "MyForm.h [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-20T22:29:36.05Z",
+              "IsPinned": true,
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
+              "Title": "comboBoxSoundDiagramInstrument_SelectedIndexChanged.cpp",
+              "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Sound Visualisation\\comboBoxSoundDiagramInstrument_SelectedIndexChanged.cpp",
+              "RelativeDocumentMoniker": "Events\\Sound Visualisation\\comboBoxSoundDiagramInstrument_SelectedIndexChanged.cpp",
+              "ToolTip": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Sound Visualisation\\comboBoxSoundDiagramInstrument_SelectedIndexChanged.cpp",
+              "RelativeToolTip": "Events\\Sound Visualisation\\comboBoxSoundDiagramInstrument_SelectedIndexChanged.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-21T20:35:54.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainForm.h",
+              "DocumentMoniker": "C:\\Users\\\u0415\u0433\u043E\u0440\\AppData\\Local\\Temp\\Rar$DIa11560.39505\\MainForm.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\\u0415\u0433\u043E\u0440\\AppData\\Local\\Temp\\Rar$DIa11560.39505\\MainForm.h",
+              "ToolTip": "C:\\Users\\\u0415\u0433\u043E\u0440\\AppData\\Local\\Temp\\Rar$DIa11560.39505\\MainForm.h",
+              "RelativeToolTip": "..\\..\\..\\Users\\\u0415\u0433\u043E\u0440\\AppData\\Local\\Temp\\Rar$DIa11560.39505\\MainForm.h",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAG8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-21T19:51:25.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "buttonShowVisualisation_Click.cpp",
+              "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Sound Visualisation\\buttonShowVisualisation_Click.cpp",
+              "RelativeDocumentMoniker": "Events\\Sound Visualisation\\buttonShowVisualisation_Click.cpp",
+              "ToolTip": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Sound Visualisation\\buttonShowVisualisation_Click.cpp",
+              "RelativeToolTip": "Events\\Sound Visualisation\\buttonShowVisualisation_Click.cpp",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAcwMwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-21T18:03:12.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "freeToolStripMenuItem_Click.cpp",
+              "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Sound menu\\freeToolStripMenuItem_Click.cpp",
+              "RelativeDocumentMoniker": "Events\\Sound menu\\freeToolStripMenuItem_Click.cpp",
+              "ToolTip": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Sound menu\\freeToolStripMenuItem_Click.cpp",
+              "RelativeToolTip": "Events\\Sound menu\\freeToolStripMenuItem_Click.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-21T17:10:17.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "ButtonYellow_Click.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Color\\ButtonYellow_Click.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Color\\ButtonYellow_Click.cpp",
@@ -173,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "ButtonRed_Click.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Color\\ButtonRed_Click.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Color\\ButtonRed_Click.cpp",
@@ -185,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "ButtonOrange_Click.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Color\\ButtonOrange_Click.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Color\\ButtonOrange_Click.cpp",
@@ -197,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "ButtonGreen_Click.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Color\\ButtonGreen_Click.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Color\\ButtonGreen_Click.cpp",
@@ -209,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "ButtonPurple_Click.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Color\\ButtonPurple_Click.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Color\\ButtonPurple_Click.cpp",
@@ -221,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "ButtonBlue_Click.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Color\\ButtonBlue_Click.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Color\\ButtonBlue_Click.cpp",
@@ -233,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "comboBoxInstruments_SelectedIndexChanged.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Sound\\comboBoxInstruments_SelectedIndexChanged.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Sound\\comboBoxInstruments_SelectedIndexChanged.cpp",
@@ -245,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "ButtonCyan_Click.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Color\\ButtonCyan_Click.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Color\\ButtonCyan_Click.cpp",
@@ -257,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "qwerty.cpp",
               "DocumentMoniker": "C:\\Users\\\u0415\u0433\u043E\u0440\\Downloads\\qwerty.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\\u0415\u0433\u043E\u0440\\Downloads\\qwerty.cpp",
@@ -269,31 +350,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "MyForm.resx",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\MyForm.resx",
               "RelativeDocumentMoniker": "MyForm.resx",
               "ToolTip": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\MyForm.resx",
               "RelativeToolTip": "MyForm.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-05-20T18:06:52.49Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MyForm.h",
-              "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\MyForm.h",
-              "RelativeDocumentMoniker": "MyForm.h",
-              "ToolTip": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\MyForm.h",
-              "RelativeToolTip": "MyForm.h",
-              "ViewState": "AQIAAG8DAAAAAAAAAAAAAIADAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-20T16:49:17.755Z",
+              "WhenOpened": "2024-05-20T18:06:52.49Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "openFileToolStripMenuItem_Click.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas menu\\openFileToolStripMenuItem_Click.cpp",
               "RelativeDocumentMoniker": "Events\\Canvas menu\\openFileToolStripMenuItem_Click.cpp",
@@ -305,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "clearCanvasToolStripMenuItem_Click.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas menu\\clearCanvasToolStripMenuItem_Click.cpp",
               "RelativeDocumentMoniker": "Events\\Canvas menu\\clearCanvasToolStripMenuItem_Click.cpp",
@@ -317,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 3,
               "Title": "buttonCreate_Click.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\buttonCreate_Click.cpp",
               "RelativeDocumentMoniker": "Events\\buttonCreate_Click.cpp",
@@ -325,11 +394,12 @@
               "RelativeToolTip": "Events\\buttonCreate_Click.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-20T16:49:10.885Z"
+              "WhenOpened": "2024-05-20T16:49:10.885Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "saveAsToolStripMenuItem_Click.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas menu\\saveAsToolStripMenuItem_Click.cpp",
               "RelativeDocumentMoniker": "Events\\Canvas menu\\saveAsToolStripMenuItem_Click.cpp",
@@ -341,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "numericUpDownBrushSize_ValueChanged.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Shape\\numericUpDownBrushSize_ValueChanged.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Shape\\numericUpDownBrushSize_ValueChanged.cpp",
@@ -353,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "radioButtonTriangle_CheckedChanged.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Shape\\radioButtonTriangle_CheckedChanged.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Shape\\radioButtonTriangle_CheckedChanged.cpp",
@@ -365,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "radioButtonSquare_CheckedChanged.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Shape\\radioButtonSquare_CheckedChanged.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Shape\\radioButtonSquare_CheckedChanged.cpp",
@@ -373,12 +443,11 @@
               "RelativeToolTip": "Events\\Brush options events\\Shape\\radioButtonSquare_CheckedChanged.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-20T15:25:36.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T15:25:36.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "radioButtonLine_CheckedChanged.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Shape\\radioButtonLine_CheckedChanged.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Shape\\radioButtonLine_CheckedChanged.cpp",
@@ -390,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "radioButtonErase_CheckedChanged.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Shape\\radioButtonErase_CheckedChanged.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Shape\\radioButtonErase_CheckedChanged.cpp",
@@ -402,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "radioButtonCircle_CheckedChanged.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Shape\\radioButtonCircle_CheckedChanged.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Shape\\radioButtonCircle_CheckedChanged.cpp",
@@ -414,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "radioButtonDraw_CheckedChanged.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Brush options events\\Shape\\radioButtonDraw_CheckedChanged.cpp",
               "RelativeDocumentMoniker": "Events\\Brush options events\\Shape\\radioButtonDraw_CheckedChanged.cpp",
@@ -426,20 +495,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "pictureBoxCanvas_Paint.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas events\\pictureBoxCanvas_Paint.cpp",
               "RelativeDocumentMoniker": "Events\\Canvas events\\pictureBoxCanvas_Paint.cpp",
               "ToolTip": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas events\\pictureBoxCanvas_Paint.cpp",
               "RelativeToolTip": "Events\\Canvas events\\pictureBoxCanvas_Paint.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAADAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-20T13:31:29.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "pictureBoxCanvas_MouseUp.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas events\\pictureBoxCanvas_MouseUp.cpp",
               "RelativeDocumentMoniker": "Events\\Canvas events\\pictureBoxCanvas_MouseUp.cpp",
@@ -452,26 +521,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "pictureBoxCanvas_MouseMove.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas events\\pictureBoxCanvas_MouseMove.cpp",
               "RelativeDocumentMoniker": "Events\\Canvas events\\pictureBoxCanvas_MouseMove.cpp",
               "ToolTip": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas events\\pictureBoxCanvas_MouseMove.cpp",
               "RelativeToolTip": "Events\\Canvas events\\pictureBoxCanvas_MouseMove.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-20T12:17:26.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "pictureBoxCanvas_MouseDown.cpp",
               "DocumentMoniker": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas events\\pictureBoxCanvas_MouseDown.cpp",
               "RelativeDocumentMoniker": "Events\\Canvas events\\pictureBoxCanvas_MouseDown.cpp",
               "ToolTip": "C:\\GIT\\CreativeProjectAlmost\\Risovalka\\Events\\Canvas events\\pictureBoxCanvas_MouseDown.cpp",
               "RelativeToolTip": "Events\\Canvas events\\pictureBoxCanvas_MouseDown.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKEAAABNAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKYAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-20T12:16:05.192Z",
               "EditorCaption": ""

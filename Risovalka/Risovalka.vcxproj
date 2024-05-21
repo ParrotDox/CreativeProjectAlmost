@@ -150,6 +150,9 @@
     <ClCompile Include="Events\Canvas menu\saveAsToolStripMenuItem_Click.cpp" />
     <ClCompile Include="Events\Sound menu\freeToolStripMenuItem_Click.cpp" />
     <ClCompile Include="Events\Sound menu\steptsToolStripMenuItem_Click.cpp" />
+    <ClCompile Include="Events\Sound Visualisation\buttonShowVisualisation_Click.cpp" />
+    <ClCompile Include="Events\Sound Visualisation\buttonSoundDiagram_Click.cpp" />
+    <ClCompile Include="Events\Sound Visualisation\comboBoxSoundDiagramInstrument_SelectedIndexChanged.cpp" />
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>

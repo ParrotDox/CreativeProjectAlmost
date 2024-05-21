@@ -44,7 +44,7 @@ namespace Risovalka {
 	private: System::Windows::Forms::ToolStripMenuItem^ clearCanvasToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ soundModeToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ freeToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ stepsToolStripMenuItem;
+
 	private: System::Windows::Forms::GroupBox^ OuterGroupBox;
 	private: System::Windows::Forms::GroupBox^ InnerRightGroupBox;
 
@@ -109,6 +109,20 @@ namespace Risovalka {
 	private: System::Windows::Forms::Label^ labelE;
 
 	private: System::Windows::Forms::Label^ labelD;
+	private: System::Windows::Forms::GroupBox^ groupBoxSoundDiagram;
+
+	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::ComboBox^ comboBoxSoundDiagramInstrument;
+	private: System::Windows::Forms::PictureBox^ pictureBoxSoundDiagram;
+
+
+	private: System::Windows::Forms::Button^ buttonShowVisualisation;
+
+private: System::Windows::Forms::NumericUpDown^ numericUpDownSoundDiagramOctave;
+
+	private: System::Windows::Forms::Label^ label4;
+private: System::Windows::Forms::Button^ buttonSoundDiagramClose;
+
 
 
 
@@ -144,7 +158,6 @@ namespace Risovalka {
 			this->clearCanvasToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->soundModeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->freeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->stepsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->OuterGroupBox = (gcnew System::Windows::Forms::GroupBox());
 			this->InnerCentralGroupBox = (gcnew System::Windows::Forms::GroupBox());
 			this->splitContainer1 = (gcnew System::Windows::Forms::SplitContainer());
@@ -190,6 +203,14 @@ namespace Risovalka {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->numericUpDownCreateHeight = (gcnew System::Windows::Forms::NumericUpDown());
 			this->numericUpDownCreateWidth = (gcnew System::Windows::Forms::NumericUpDown());
+			this->groupBoxSoundDiagram = (gcnew System::Windows::Forms::GroupBox());
+			this->buttonSoundDiagramClose = (gcnew System::Windows::Forms::Button());
+			this->buttonShowVisualisation = (gcnew System::Windows::Forms::Button());
+			this->numericUpDownSoundDiagramOctave = (gcnew System::Windows::Forms::NumericUpDown());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->comboBoxSoundDiagramInstrument = (gcnew System::Windows::Forms::ComboBox());
+			this->pictureBoxSoundDiagram = (gcnew System::Windows::Forms::PictureBox());
 			this->TopMenuStrip->SuspendLayout();
 			this->OuterGroupBox->SuspendLayout();
 			this->InnerCentralGroupBox->SuspendLayout();
@@ -216,6 +237,9 @@ namespace Risovalka {
 			this->groupBoxCreateCanvas->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDownCreateHeight))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDownCreateWidth))->BeginInit();
+			this->groupBoxSoundDiagram->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDownSoundDiagramOctave))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxSoundDiagram))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// openFileDialog1
@@ -274,28 +298,17 @@ namespace Risovalka {
 			// 
 			// soundModeToolStripMenuItem
 			// 
-			this->soundModeToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->freeToolStripMenuItem,
-					this->stepsToolStripMenuItem
-			});
+			this->soundModeToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->freeToolStripMenuItem });
 			this->soundModeToolStripMenuItem->Name = L"soundModeToolStripMenuItem";
-			this->soundModeToolStripMenuItem->Size = System::Drawing::Size(87, 20);
-			this->soundModeToolStripMenuItem->Text = L"Sound mode";
-			this->soundModeToolStripMenuItem->Visible = false;
+			this->soundModeToolStripMenuItem->Size = System::Drawing::Size(85, 20);
+			this->soundModeToolStripMenuItem->Text = L"Visualisation";
 			// 
 			// freeToolStripMenuItem
 			// 
 			this->freeToolStripMenuItem->Name = L"freeToolStripMenuItem";
-			this->freeToolStripMenuItem->Size = System::Drawing::Size(102, 22);
-			this->freeToolStripMenuItem->Text = L"Free";
+			this->freeToolStripMenuItem->Size = System::Drawing::Size(155, 22);
+			this->freeToolStripMenuItem->Text = L"Sound diagram";
 			this->freeToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::freeToolStripMenuItem_Click);
-			// 
-			// stepsToolStripMenuItem
-			// 
-			this->stepsToolStripMenuItem->Name = L"stepsToolStripMenuItem";
-			this->stepsToolStripMenuItem->Size = System::Drawing::Size(102, 22);
-			this->stepsToolStripMenuItem->Text = L"Steps";
-			this->stepsToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::stepsToolStripMenuItem_Click);
 			// 
 			// OuterGroupBox
 			// 
@@ -751,6 +764,7 @@ namespace Risovalka {
 			// pictureBoxCanvas
 			// 
 			this->pictureBoxCanvas->BackColor = System::Drawing::Color::White;
+			this->pictureBoxCanvas->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBoxCanvas->Dock = System::Windows::Forms::DockStyle::Left;
 			this->pictureBoxCanvas->Location = System::Drawing::Point(0, 145);
 			this->pictureBoxCanvas->Name = L"pictureBoxCanvas";
@@ -830,11 +844,108 @@ namespace Risovalka {
 			this->numericUpDownCreateWidth->TabIndex = 5;
 			this->numericUpDownCreateWidth->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 100, 0, 0, 0 });
 			// 
+			// groupBoxSoundDiagram
+			// 
+			this->groupBoxSoundDiagram->Controls->Add(this->buttonSoundDiagramClose);
+			this->groupBoxSoundDiagram->Controls->Add(this->buttonShowVisualisation);
+			this->groupBoxSoundDiagram->Controls->Add(this->numericUpDownSoundDiagramOctave);
+			this->groupBoxSoundDiagram->Controls->Add(this->label4);
+			this->groupBoxSoundDiagram->Controls->Add(this->label3);
+			this->groupBoxSoundDiagram->Controls->Add(this->comboBoxSoundDiagramInstrument);
+			this->groupBoxSoundDiagram->Controls->Add(this->pictureBoxSoundDiagram);
+			this->groupBoxSoundDiagram->Location = System::Drawing::Point(13, 152);
+			this->groupBoxSoundDiagram->Name = L"groupBoxSoundDiagram";
+			this->groupBoxSoundDiagram->Size = System::Drawing::Size(373, 229);
+			this->groupBoxSoundDiagram->TabIndex = 4;
+			this->groupBoxSoundDiagram->TabStop = false;
+			this->groupBoxSoundDiagram->Text = L"Sound diagram";
+			this->groupBoxSoundDiagram->Visible = false;
+			// 
+			// buttonSoundDiagramClose
+			// 
+			this->buttonSoundDiagramClose->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->buttonSoundDiagramClose->Location = System::Drawing::Point(9, 20);
+			this->buttonSoundDiagramClose->Name = L"buttonSoundDiagramClose";
+			this->buttonSoundDiagramClose->Size = System::Drawing::Size(25, 25);
+			this->buttonSoundDiagramClose->TabIndex = 15;
+			this->buttonSoundDiagramClose->Text = L"X";
+			this->buttonSoundDiagramClose->UseVisualStyleBackColor = false;
+			this->buttonSoundDiagramClose->Click += gcnew System::EventHandler(this, &PaintForm::buttonSoundDiagramClose_Click);
+			// 
+			// buttonShowVisualisation
+			// 
+			this->buttonShowVisualisation->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->buttonShowVisualisation->Location = System::Drawing::Point(6, 134);
+			this->buttonShowVisualisation->Name = L"buttonShowVisualisation";
+			this->buttonShowVisualisation->Size = System::Drawing::Size(129, 82);
+			this->buttonShowVisualisation->TabIndex = 14;
+			this->buttonShowVisualisation->Text = L"Show visualisation";
+			this->buttonShowVisualisation->UseVisualStyleBackColor = true;
+			this->buttonShowVisualisation->Click += gcnew System::EventHandler(this, &PaintForm::buttonShowVisualisation_Click);
+			// 
+			// numericUpDownSoundDiagramOctave
+			// 
+			this->numericUpDownSoundDiagramOctave->Location = System::Drawing::Point(5, 108);
+			this->numericUpDownSoundDiagramOctave->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
+			this->numericUpDownSoundDiagramOctave->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
+			this->numericUpDownSoundDiagramOctave->Name = L"numericUpDownSoundDiagramOctave";
+			this->numericUpDownSoundDiagramOctave->Size = System::Drawing::Size(76, 20);
+			this->numericUpDownSoundDiagramOctave->TabIndex = 13;
+			this->numericUpDownSoundDiagramOctave->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
+			this->label4->Location = System::Drawing::Point(6, 90);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(50, 15);
+			this->label4->TabIndex = 12;
+			this->label4->Text = L"Octave";
+			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
+			this->label3->Location = System::Drawing::Point(6, 48);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(129, 15);
+			this->label3->TabIndex = 11;
+			this->label3->Text = L"Musical instrument";
+			this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// comboBoxSoundDiagramInstrument
+			// 
+			this->comboBoxSoundDiagramInstrument->FormattingEnabled = true;
+			this->comboBoxSoundDiagramInstrument->Items->AddRange(gcnew cli::array< System::Object^  >(4) {
+				L"None", L"Marimba", L"Piano",
+					L"WoodWind"
+			});
+			this->comboBoxSoundDiagramInstrument->Location = System::Drawing::Point(6, 66);
+			this->comboBoxSoundDiagramInstrument->Name = L"comboBoxSoundDiagramInstrument";
+			this->comboBoxSoundDiagramInstrument->Size = System::Drawing::Size(129, 21);
+			this->comboBoxSoundDiagramInstrument->TabIndex = 1;
+			this->comboBoxSoundDiagramInstrument->Text = L"None";
+			this->comboBoxSoundDiagramInstrument->SelectedIndexChanged += gcnew System::EventHandler(this, &PaintForm::comboBoxSoundDiagramInstrument_SelectedIndexChanged);
+			// 
+			// pictureBoxSoundDiagram
+			// 
+			this->pictureBoxSoundDiagram->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->pictureBoxSoundDiagram->Location = System::Drawing::Point(146, 20);
+			this->pictureBoxSoundDiagram->Name = L"pictureBoxSoundDiagram";
+			this->pictureBoxSoundDiagram->Size = System::Drawing::Size(192, 161);
+			this->pictureBoxSoundDiagram->TabIndex = 0;
+			this->pictureBoxSoundDiagram->TabStop = false;
+			// 
 			// PaintForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(96, 96);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Dpi;
 			this->ClientSize = System::Drawing::Size(1010, 538);
+			this->Controls->Add(this->groupBoxSoundDiagram);
 			this->Controls->Add(this->groupBoxCreateCanvas);
 			this->Controls->Add(this->pictureBoxCanvas);
 			this->Controls->Add(this->OuterGroupBox);
@@ -843,7 +954,7 @@ namespace Risovalka {
 			this->MainMenuStrip = this->TopMenuStrip;
 			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"PaintForm";
-			this->Text = L"MyForm";
+			this->Text = L"Risovalka";
 			this->Load += gcnew System::EventHandler(this, &PaintForm::MyForm_Load);
 			this->TopMenuStrip->ResumeLayout(false);
 			this->TopMenuStrip->PerformLayout();
@@ -876,6 +987,10 @@ namespace Risovalka {
 			this->groupBoxCreateCanvas->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDownCreateHeight))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDownCreateWidth))->EndInit();
+			this->groupBoxSoundDiagram->ResumeLayout(false);
+			this->groupBoxSoundDiagram->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDownSoundDiagramOctave))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxSoundDiagram))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -891,6 +1006,8 @@ namespace Risovalka {
 		Graphics^ canvas;
 		Pen^ pen;
 		SoundPlayer^ audio_feedback;
+		Graphics^ canvas_temp;
+		Bitmap^ image_temp;
 		
 	//Событие при запуске формы
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) 
@@ -950,5 +1067,8 @@ private: System::Void createToolStripMenuItem_Click(System::Object^ sender, Syst
 private: System::Void labelLength_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void buttonCreate_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void buttonSoundDiagramClose_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void comboBoxSoundDiagramInstrument_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e);
+private: System::Void buttonShowVisualisation_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }

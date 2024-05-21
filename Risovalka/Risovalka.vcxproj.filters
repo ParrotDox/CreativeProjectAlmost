@@ -108,6 +108,15 @@
     <ClCompile Include="Events\buttonCreate_Click.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Events\Sound Visualisation\buttonShowVisualisation_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Sound Visualisation\buttonSoundDiagram_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Sound Visualisation\comboBoxSoundDiagramInstrument_SelectedIndexChanged.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">

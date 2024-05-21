@@ -2,8 +2,7 @@
 System::Void Risovalka::PaintForm::pictureBoxCanvas_MouseDown(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e)
 {
 	mouse_pressed = true;
-
-	if(comboBoxInstruments->Text == "Marimba")
+	if (comboBoxInstruments->Text == "Marimba")
 	{
 		if (pen->Color == Color::Red)
 		{
@@ -33,7 +32,7 @@ System::Void Risovalka::PaintForm::pictureBoxCanvas_MouseDown(System::Object^ se
 		{
 			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\Marimba\\MarimbaB.wav");
 		}
-		
+
 	}
 	if (comboBoxInstruments->Text == "Piano")
 	{
