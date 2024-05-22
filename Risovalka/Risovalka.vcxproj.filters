@@ -117,6 +117,9 @@
     <ClCompile Include="Events\Sound Visualisation\comboBoxSoundDiagramInstrument_SelectedIndexChanged.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Events\Sound Visualisation\numericUpDownSoundDiagramOctave_ValueChanged.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">

@@ -153,6 +153,7 @@
     <ClCompile Include="Events\Sound Visualisation\buttonShowVisualisation_Click.cpp" />
     <ClCompile Include="Events\Sound Visualisation\buttonSoundDiagram_Click.cpp" />
     <ClCompile Include="Events\Sound Visualisation\comboBoxSoundDiagramInstrument_SelectedIndexChanged.cpp" />
+    <ClCompile Include="Events\Sound Visualisation\numericUpDownSoundDiagramOctave_ValueChanged.cpp" />
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
