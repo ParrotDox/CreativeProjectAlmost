@@ -32,5 +32,8 @@ C:\GIT\CreativeProjectAlmost\Risovalka\Events\Sound Visualisation\buttonShowVisu
 C:\GIT\CreativeProjectAlmost\Risovalka\Events\Sound Visualisation\buttonSoundDiagram_Click.cpp;C:\GIT\CreativeProjectAlmost\Risovalka\Risovalka\x64\Debug\buttonSoundDiagram_Click.obj
 C:\GIT\CreativeProjectAlmost\Risovalka\Events\Sound Visualisation\comboBoxSoundDiagramInstrument_SelectedIndexChanged.cpp;C:\GIT\CreativeProjectAlmost\Risovalka\Risovalka\x64\Debug\comboBoxSoundDiagramInstrument_SelectedIndexChanged.obj
 C:\GIT\CreativeProjectAlmost\Risovalka\Events\Sound Visualisation\numericUpDownSoundDiagramOctave_ValueChanged.cpp;C:\GIT\CreativeProjectAlmost\Risovalka\Risovalka\x64\Debug\numericUpDownSoundDiagramOctave_ValueChanged.obj
+C:\GIT\CreativeProjectAlmost\Risovalka\Events\Test knowledge\buttonCheckResult_Click.cpp;C:\GIT\CreativeProjectAlmost\Risovalka\Risovalka\x64\Debug\buttonCheckResult_Click.obj
+C:\GIT\CreativeProjectAlmost\Risovalka\Events\Test knowledge\buttonStartGame_Click.cpp;C:\GIT\CreativeProjectAlmost\Risovalka\Risovalka\x64\Debug\buttonStartGame_Click.obj
+C:\GIT\CreativeProjectAlmost\Risovalka\Events\Test knowledge\exerciseToolStripMenuItem_Click.cpp;C:\GIT\CreativeProjectAlmost\Risovalka\Risovalka\x64\Debug\exerciseToolStripMenuItem_Click.obj
 C:\GIT\CreativeProjectAlmost\Risovalka\MyForm.cpp;C:\GIT\CreativeProjectAlmost\Risovalka\Risovalka\x64\Debug\MyForm.obj
 C:\GIT\CreativeProjectAlmost\Risovalka\Risovalka\x64\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cpp;C:\GIT\CreativeProjectAlmost\Risovalka\Risovalka\x64\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.obj

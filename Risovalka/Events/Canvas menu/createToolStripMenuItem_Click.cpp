@@ -10,5 +10,15 @@ System::Void Risovalka::PaintForm::createToolStripMenuItem_Click(System::Object^
 	{
 		groupBoxCreateCanvas->Visible = true;
 	}
+	if (groupBoxExerciseKnowledge->Visible == true)
+	{
+		groupBoxExerciseKnowledge->Visible = false;
+		groupBoxExerciseKnowledge->Refresh();
+	}
+	if (groupBoxSoundDiagram->Visible == true)
+	{
+		groupBoxSoundDiagram->Visible = false;
+		groupBoxSoundDiagram->Refresh();
+	}
 	return System::Void();
 }

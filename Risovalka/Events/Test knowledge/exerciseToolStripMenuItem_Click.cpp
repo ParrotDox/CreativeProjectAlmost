@@ -4,5 +4,13 @@ System::Void Risovalka::PaintForm::exerciseToolStripMenuItem_Click(System::Objec
 		groupBoxExerciseKnowledge->Visible = false;
 	else
 		groupBoxExerciseKnowledge->Visible = true;
+	if(groupBoxCreateCanvas->Visible == true)
+	{
+		groupBoxCreateCanvas->Visible = false;
+	}
+	if(groupBoxSoundDiagram->Visible == true)
+	{
+		groupBoxSoundDiagram->Visible = false;
+	}
 	return System::Void();
 }
