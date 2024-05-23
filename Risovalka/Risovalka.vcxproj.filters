@@ -120,6 +120,15 @@
     <ClCompile Include="Events\Sound Visualisation\numericUpDownSoundDiagramOctave_ValueChanged.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Events\Test knowledge\exerciseToolStripMenuItem_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Test knowledge\buttonStartGame_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Events\Test knowledge\buttonCheckResult_Click.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
