@@ -961,7 +961,7 @@ private: System::Windows::Forms::Button^ buttonCloseCreateCanvas;
 			this->groupBoxSoundDiagram->Controls->Add(this->labelSoundDiagramMusicalInstrument);
 			this->groupBoxSoundDiagram->Controls->Add(this->comboBoxSoundDiagramInstrument);
 			this->groupBoxSoundDiagram->Controls->Add(this->pictureBoxSoundDiagram);
-			this->groupBoxSoundDiagram->Location = System::Drawing::Point(6, 151);
+			this->groupBoxSoundDiagram->Location = System::Drawing::Point(6, 161);
 			this->groupBoxSoundDiagram->Name = L"groupBoxSoundDiagram";
 			this->groupBoxSoundDiagram->Size = System::Drawing::Size(960, 240);
 			this->groupBoxSoundDiagram->TabIndex = 4;
@@ -1114,7 +1114,7 @@ private: System::Windows::Forms::Button^ buttonCloseCreateCanvas;
 			this->groupBoxExerciseKnowledge->Controls->Add(this->buttonStartGame);
 			this->groupBoxExerciseKnowledge->Font = (gcnew System::Drawing::Font(L"Consolas", 14, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->groupBoxExerciseKnowledge->Location = System::Drawing::Point(3, 406);
+			this->groupBoxExerciseKnowledge->Location = System::Drawing::Point(6, 151);
 			this->groupBoxExerciseKnowledge->Margin = System::Windows::Forms::Padding(2);
 			this->groupBoxExerciseKnowledge->Name = L"groupBoxExerciseKnowledge";
 			this->groupBoxExerciseKnowledge->Padding = System::Windows::Forms::Padding(2);

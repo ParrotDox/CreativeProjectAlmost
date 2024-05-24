@@ -1,0 +1,3 @@
+C:\GIT\CreativeProjectAlmost\Risovalka\Risovalka\x64\Release\Risovalka.vcxproj.AssemblyReference.cache
+C:\GIT\CreativeProjectAlmost\Risovalka\Risovalka\x64\Release\Risovalka.MyForm.resources
+C:\GIT\CreativeProjectAlmost\Risovalka\Risovalka\x64\Release\Risovalka.vcxproj.GenerateResource.cache
