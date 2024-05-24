@@ -91,8 +91,10 @@ namespace Risovalka {
 	private: System::Windows::Forms::RadioButton^ radioButtonTriangle;
 	private: System::Windows::Forms::Label^ labelShape;
 	private: System::Windows::Forms::GroupBox^ groupBoxCreateCanvas;
-	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::Label^ labelCreateCanvasHeight;
+
+	private: System::Windows::Forms::Label^ labelCreateCanvasWidth;
+
 	private: System::Windows::Forms::NumericUpDown^ numericUpDownCreateHeight;
 	private: System::Windows::Forms::NumericUpDown^ numericUpDownCreateWidth;
 	private: System::Windows::Forms::Button^ buttonCreate;
@@ -110,8 +112,9 @@ namespace Risovalka {
 
 	private: System::Windows::Forms::Label^ labelD;
 	private: System::Windows::Forms::GroupBox^ groupBoxSoundDiagram;
+	private: System::Windows::Forms::Label^ labelSoundDiagramMusicalInstrument;
 
-	private: System::Windows::Forms::Label^ label3;
+
 	private: System::Windows::Forms::ComboBox^ comboBoxSoundDiagramInstrument;
 	private: System::Windows::Forms::PictureBox^ pictureBoxSoundDiagram;
 
@@ -119,14 +122,16 @@ namespace Risovalka {
 	private: System::Windows::Forms::Button^ buttonShowVisualisation;
 
 private: System::Windows::Forms::NumericUpDown^ numericUpDownSoundDiagramOctave;
+private: System::Windows::Forms::Label^ labelSoundDiagramOctave;
 
-	private: System::Windows::Forms::Label^ label4;
+
 private: System::Windows::Forms::Button^ buttonSoundDiagramClose;
 private: System::Windows::Forms::Label^ labelOctaveWhat;
 private: System::Windows::Forms::Label^ labelCurrentNodePlaying;
 private: System::Windows::Forms::PictureBox^ pictureBoxOctaveWhatPanel;
 private: System::Windows::Forms::PictureBox^ pictureBoxOctaveWhatChosen;
-private: System::Windows::Forms::Label^ label5;
+private: System::Windows::Forms::Label^ labelSoundDiagramOctaveSheet;
+
 private: System::Windows::Forms::GroupBox^ groupBoxExerciseKnowledge;
 private: System::Windows::Forms::ToolStripMenuItem^ exerciseToolStripMenuItem;
 private: System::Windows::Forms::Button^ buttonCheckResult;
@@ -138,6 +143,12 @@ private: System::Windows::Forms::Label^ labelJudgmentAnswer;
 private: System::Windows::Forms::Label^ labelWaitingNotification;
 private: System::Windows::Forms::Label^ labelRightOctave;
 private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
+private: System::Windows::Forms::ToolStripMenuItem^ localizationToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ englishToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^ russianToolStripMenuItem;
+private: System::Windows::Forms::Button^ buttonCloseTest;
+private: System::Windows::Forms::ToolStripMenuItem^ testToolStripMenuItem;
+private: System::Windows::Forms::Button^ buttonCloseCreateCanvas;
 
 
 
@@ -168,6 +179,10 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			this->soundModeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->freeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->exerciseToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->testToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->localizationToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->englishToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->russianToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->OuterGroupBox = (gcnew System::Windows::Forms::GroupBox());
 			this->InnerCentralGroupBox = (gcnew System::Windows::Forms::GroupBox());
 			this->splitContainer1 = (gcnew System::Windows::Forms::SplitContainer());
@@ -208,23 +223,14 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			this->pictureBoxInstrument = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxCanvas = (gcnew System::Windows::Forms::PictureBox());
 			this->groupBoxCreateCanvas = (gcnew System::Windows::Forms::GroupBox());
+			this->buttonCloseCreateCanvas = (gcnew System::Windows::Forms::Button());
 			this->buttonCreate = (gcnew System::Windows::Forms::Button());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->labelCreateCanvasHeight = (gcnew System::Windows::Forms::Label());
+			this->labelCreateCanvasWidth = (gcnew System::Windows::Forms::Label());
 			this->numericUpDownCreateHeight = (gcnew System::Windows::Forms::NumericUpDown());
 			this->numericUpDownCreateWidth = (gcnew System::Windows::Forms::NumericUpDown());
 			this->groupBoxSoundDiagram = (gcnew System::Windows::Forms::GroupBox());
-			this->groupBoxExerciseKnowledge = (gcnew System::Windows::Forms::GroupBox());
-			this->labelRightOctave = (gcnew System::Windows::Forms::Label());
-			this->pictureBoxRightInstrument = (gcnew System::Windows::Forms::PictureBox());
-			this->labelWaitingNotification = (gcnew System::Windows::Forms::Label());
-			this->labelJudgmentAnswer = (gcnew System::Windows::Forms::Label());
-			this->groupBoxInputAnswer = (gcnew System::Windows::Forms::GroupBox());
-			this->comboBoxChoiseOctave = (gcnew System::Windows::Forms::ComboBox());
-			this->comboBoxInstrumentChoise = (gcnew System::Windows::Forms::ComboBox());
-			this->buttonCheckResult = (gcnew System::Windows::Forms::Button());
-			this->buttonStartGame = (gcnew System::Windows::Forms::Button());
-			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->labelSoundDiagramOctaveSheet = (gcnew System::Windows::Forms::Label());
 			this->pictureBoxOctaveWhatChosen = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBoxOctaveWhatPanel = (gcnew System::Windows::Forms::PictureBox());
 			this->labelCurrentNodePlaying = (gcnew System::Windows::Forms::Label());
@@ -232,10 +238,21 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			this->buttonSoundDiagramClose = (gcnew System::Windows::Forms::Button());
 			this->buttonShowVisualisation = (gcnew System::Windows::Forms::Button());
 			this->numericUpDownSoundDiagramOctave = (gcnew System::Windows::Forms::NumericUpDown());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->labelSoundDiagramOctave = (gcnew System::Windows::Forms::Label());
+			this->labelSoundDiagramMusicalInstrument = (gcnew System::Windows::Forms::Label());
 			this->comboBoxSoundDiagramInstrument = (gcnew System::Windows::Forms::ComboBox());
 			this->pictureBoxSoundDiagram = (gcnew System::Windows::Forms::PictureBox());
+			this->groupBoxExerciseKnowledge = (gcnew System::Windows::Forms::GroupBox());
+			this->buttonCloseTest = (gcnew System::Windows::Forms::Button());
+			this->pictureBoxRightInstrument = (gcnew System::Windows::Forms::PictureBox());
+			this->labelRightOctave = (gcnew System::Windows::Forms::Label());
+			this->labelWaitingNotification = (gcnew System::Windows::Forms::Label());
+			this->labelJudgmentAnswer = (gcnew System::Windows::Forms::Label());
+			this->groupBoxInputAnswer = (gcnew System::Windows::Forms::GroupBox());
+			this->comboBoxChoiseOctave = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBoxInstrumentChoise = (gcnew System::Windows::Forms::ComboBox());
+			this->buttonCheckResult = (gcnew System::Windows::Forms::Button());
+			this->buttonStartGame = (gcnew System::Windows::Forms::Button());
 			this->TopMenuStrip->SuspendLayout();
 			this->OuterGroupBox->SuspendLayout();
 			this->InnerCentralGroupBox->SuspendLayout();
@@ -263,13 +280,13 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDownCreateHeight))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDownCreateWidth))->BeginInit();
 			this->groupBoxSoundDiagram->SuspendLayout();
-			this->groupBoxExerciseKnowledge->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRightInstrument))->BeginInit();
-			this->groupBoxInputAnswer->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxOctaveWhatChosen))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxOctaveWhatPanel))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDownSoundDiagramOctave))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxSoundDiagram))->BeginInit();
+			this->groupBoxExerciseKnowledge->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRightInstrument))->BeginInit();
+			this->groupBoxInputAnswer->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// openFileDialog1
@@ -279,9 +296,9 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			// TopMenuStrip
 			// 
 			this->TopMenuStrip->ImageScalingSize = System::Drawing::Size(24, 24);
-			this->TopMenuStrip->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+			this->TopMenuStrip->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
 				this->canvasToolStripMenuItem,
-					this->soundModeToolStripMenuItem, this->exerciseToolStripMenuItem
+					this->soundModeToolStripMenuItem, this->exerciseToolStripMenuItem, this->localizationToolStripMenuItem
 			});
 			this->TopMenuStrip->Location = System::Drawing::Point(0, 0);
 			this->TopMenuStrip->Name = L"TopMenuStrip";
@@ -344,10 +361,42 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			// 
 			// exerciseToolStripMenuItem
 			// 
+			this->exerciseToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->testToolStripMenuItem });
 			this->exerciseToolStripMenuItem->Name = L"exerciseToolStripMenuItem";
 			this->exerciseToolStripMenuItem->Size = System::Drawing::Size(61, 22);
 			this->exerciseToolStripMenuItem->Text = L"Exercise";
 			this->exerciseToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::exerciseToolStripMenuItem_Click);
+			// 
+			// testToolStripMenuItem
+			// 
+			this->testToolStripMenuItem->Name = L"testToolStripMenuItem";
+			this->testToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->testToolStripMenuItem->Text = L"Test";
+			this->testToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::testToolStripMenuItem_Click);
+			// 
+			// localizationToolStripMenuItem
+			// 
+			this->localizationToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->englishToolStripMenuItem,
+					this->russianToolStripMenuItem
+			});
+			this->localizationToolStripMenuItem->Name = L"localizationToolStripMenuItem";
+			this->localizationToolStripMenuItem->Size = System::Drawing::Size(71, 22);
+			this->localizationToolStripMenuItem->Text = L"Language";
+			// 
+			// englishToolStripMenuItem
+			// 
+			this->englishToolStripMenuItem->Name = L"englishToolStripMenuItem";
+			this->englishToolStripMenuItem->Size = System::Drawing::Size(114, 22);
+			this->englishToolStripMenuItem->Text = L"English";
+			this->englishToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::englishToolStripMenuItem_Click);
+			// 
+			// russianToolStripMenuItem
+			// 
+			this->russianToolStripMenuItem->Name = L"russianToolStripMenuItem";
+			this->russianToolStripMenuItem->Size = System::Drawing::Size(114, 22);
+			this->russianToolStripMenuItem->Text = L"Russian";
+			this->russianToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::russianToolStripMenuItem_Click);
 			// 
 			// OuterGroupBox
 			// 
@@ -398,14 +447,14 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			this->splitContainer1->Panel2->Controls->Add(this->numericUpDownWidth);
 			this->splitContainer1->Panel2->Controls->Add(this->numericUpDownLength);
 			this->splitContainer1->Size = System::Drawing::Size(448, 83);
-			this->splitContainer1->SplitterDistance = 283;
+			this->splitContainer1->SplitterDistance = 320;
 			this->splitContainer1->TabIndex = 0;
 			// 
 			// labelMode
 			// 
 			this->labelMode->AutoSize = true;
 			this->labelMode->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
-			this->labelMode->Location = System::Drawing::Point(44, 29);
+			this->labelMode->Location = System::Drawing::Point(3, 29);
 			this->labelMode->Name = L"labelMode";
 			this->labelMode->Size = System::Drawing::Size(43, 15);
 			this->labelMode->TabIndex = 4;
@@ -415,7 +464,7 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			// radioButtonTriangle
 			// 
 			this->radioButtonTriangle->AutoSize = true;
-			this->radioButtonTriangle->Location = System::Drawing::Point(214, 53);
+			this->radioButtonTriangle->Location = System::Drawing::Point(204, 53);
 			this->radioButtonTriangle->Name = L"radioButtonTriangle";
 			this->radioButtonTriangle->Size = System::Drawing::Size(63, 17);
 			this->radioButtonTriangle->TabIndex = 10;
@@ -427,7 +476,7 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			// radioButtonErase
 			// 
 			this->radioButtonErase->AutoSize = true;
-			this->radioButtonErase->Location = System::Drawing::Point(93, 53);
+			this->radioButtonErase->Location = System::Drawing::Point(61, 53);
 			this->radioButtonErase->Name = L"radioButtonErase";
 			this->radioButtonErase->Size = System::Drawing::Size(52, 17);
 			this->radioButtonErase->TabIndex = 3;
@@ -438,7 +487,7 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			// radioButtonLine
 			// 
 			this->radioButtonLine->AutoSize = true;
-			this->radioButtonLine->Location = System::Drawing::Point(214, 29);
+			this->radioButtonLine->Location = System::Drawing::Point(134, 30);
 			this->radioButtonLine->Name = L"radioButtonLine";
 			this->radioButtonLine->Size = System::Drawing::Size(45, 17);
 			this->radioButtonLine->TabIndex = 9;
@@ -450,7 +499,7 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			// 
 			this->radioButtonDraw->AutoSize = true;
 			this->radioButtonDraw->Checked = true;
-			this->radioButtonDraw->Location = System::Drawing::Point(93, 29);
+			this->radioButtonDraw->Location = System::Drawing::Point(61, 30);
 			this->radioButtonDraw->Name = L"radioButtonDraw";
 			this->radioButtonDraw->Size = System::Drawing::Size(50, 17);
 			this->radioButtonDraw->TabIndex = 2;
@@ -462,43 +511,44 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			// radioButtonCircle
 			// 
 			this->radioButtonCircle->AutoSize = true;
-			this->radioButtonCircle->Location = System::Drawing::Point(149, 53);
+			this->radioButtonCircle->Location = System::Drawing::Point(134, 53);
 			this->radioButtonCircle->Name = L"radioButtonCircle";
-			this->radioButtonCircle->Size = System::Drawing::Size(51, 17);
+			this->radioButtonCircle->Size = System::Drawing::Size(55, 17);
 			this->radioButtonCircle->TabIndex = 8;
-			this->radioButtonCircle->Text = L"Circle";
+			this->radioButtonCircle->Text = L"Ellipse";
 			this->radioButtonCircle->UseVisualStyleBackColor = true;
 			this->radioButtonCircle->CheckedChanged += gcnew System::EventHandler(this, &PaintForm::radioButtonCircle_CheckedChanged);
 			// 
 			// labelBrushSize
 			// 
+			this->labelBrushSize->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->labelBrushSize->AutoSize = true;
 			this->labelBrushSize->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
-			this->labelBrushSize->Location = System::Drawing::Point(13, 4);
+			this->labelBrushSize->Location = System::Drawing::Point(3, 5);
 			this->labelBrushSize->Name = L"labelBrushSize";
 			this->labelBrushSize->Size = System::Drawing::Size(74, 15);
 			this->labelBrushSize->TabIndex = 1;
 			this->labelBrushSize->Text = L"Brush size";
-			this->labelBrushSize->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->labelBrushSize->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// radioButtonSquare
 			// 
 			this->radioButtonSquare->AutoSize = true;
-			this->radioButtonSquare->Location = System::Drawing::Point(149, 29);
+			this->radioButtonSquare->Location = System::Drawing::Point(204, 29);
 			this->radioButtonSquare->Name = L"radioButtonSquare";
-			this->radioButtonSquare->Size = System::Drawing::Size(59, 17);
+			this->radioButtonSquare->Size = System::Drawing::Size(74, 17);
 			this->radioButtonSquare->TabIndex = 7;
-			this->radioButtonSquare->Text = L"Square";
+			this->radioButtonSquare->Text = L"Rectangle";
 			this->radioButtonSquare->UseVisualStyleBackColor = true;
 			this->radioButtonSquare->CheckedChanged += gcnew System::EventHandler(this, &PaintForm::radioButtonSquare_CheckedChanged);
 			// 
 			// numericUpDownBrushSize
 			// 
-			this->numericUpDownBrushSize->Location = System::Drawing::Point(93, 3);
+			this->numericUpDownBrushSize->Location = System::Drawing::Point(104, 4);
 			this->numericUpDownBrushSize->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 150, 0, 0, 0 });
 			this->numericUpDownBrushSize->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
 			this->numericUpDownBrushSize->Name = L"numericUpDownBrushSize";
-			this->numericUpDownBrushSize->Size = System::Drawing::Size(87, 20);
+			this->numericUpDownBrushSize->Size = System::Drawing::Size(62, 20);
 			this->numericUpDownBrushSize->TabIndex = 0;
 			this->numericUpDownBrushSize->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 5, 0, 0, 0 });
 			this->numericUpDownBrushSize->ValueChanged += gcnew System::EventHandler(this, &PaintForm::numericUpDownBrushSize_ValueChanged);
@@ -529,7 +579,7 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			// 
 			this->labelLength->AutoSize = true;
 			this->labelLength->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
-			this->labelLength->Location = System::Drawing::Point(9, 26);
+			this->labelLength->Location = System::Drawing::Point(3, 26);
 			this->labelLength->Name = L"labelLength";
 			this->labelLength->Size = System::Drawing::Size(43, 15);
 			this->labelLength->TabIndex = 5;
@@ -539,7 +589,7 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			// 
 			// numericUpDownWidth
 			// 
-			this->numericUpDownWidth->Location = System::Drawing::Point(58, 50);
+			this->numericUpDownWidth->Location = System::Drawing::Point(64, 50);
 			this->numericUpDownWidth->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 150, 0, 0, 0 });
 			this->numericUpDownWidth->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 10, 0, 0, 0 });
 			this->numericUpDownWidth->Name = L"numericUpDownWidth";
@@ -550,7 +600,7 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			// 
 			// numericUpDownLength
 			// 
-			this->numericUpDownLength->Location = System::Drawing::Point(58, 26);
+			this->numericUpDownLength->Location = System::Drawing::Point(64, 26);
 			this->numericUpDownLength->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 150, 0, 0, 0 });
 			this->numericUpDownLength->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 10, 0, 0, 0 });
 			this->numericUpDownLength->Name = L"numericUpDownLength";
@@ -818,12 +868,13 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			// 
 			// groupBoxCreateCanvas
 			// 
+			this->groupBoxCreateCanvas->Controls->Add(this->buttonCloseCreateCanvas);
 			this->groupBoxCreateCanvas->Controls->Add(this->buttonCreate);
-			this->groupBoxCreateCanvas->Controls->Add(this->label1);
-			this->groupBoxCreateCanvas->Controls->Add(this->label2);
+			this->groupBoxCreateCanvas->Controls->Add(this->labelCreateCanvasHeight);
+			this->groupBoxCreateCanvas->Controls->Add(this->labelCreateCanvasWidth);
 			this->groupBoxCreateCanvas->Controls->Add(this->numericUpDownCreateHeight);
 			this->groupBoxCreateCanvas->Controls->Add(this->numericUpDownCreateWidth);
-			this->groupBoxCreateCanvas->Location = System::Drawing::Point(364, 151);
+			this->groupBoxCreateCanvas->Location = System::Drawing::Point(400, 151);
 			this->groupBoxCreateCanvas->Name = L"groupBoxCreateCanvas";
 			this->groupBoxCreateCanvas->Size = System::Drawing::Size(257, 129);
 			this->groupBoxCreateCanvas->TabIndex = 3;
@@ -831,6 +882,18 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			this->groupBoxCreateCanvas->Text = L"Create canvas";
 			this->groupBoxCreateCanvas->Visible = false;
 			this->groupBoxCreateCanvas->Enter += gcnew System::EventHandler(this, &PaintForm::groupBoxCreateCanvas_Enter);
+			// 
+			// buttonCloseCreateCanvas
+			// 
+			this->buttonCloseCreateCanvas->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->buttonCloseCreateCanvas->Location = System::Drawing::Point(226, 10);
+			this->buttonCloseCreateCanvas->Name = L"buttonCloseCreateCanvas";
+			this->buttonCloseCreateCanvas->Size = System::Drawing::Size(25, 25);
+			this->buttonCloseCreateCanvas->TabIndex = 16;
+			this->buttonCloseCreateCanvas->Text = L"X";
+			this->buttonCloseCreateCanvas->UseVisualStyleBackColor = false;
+			this->buttonCloseCreateCanvas->Click += gcnew System::EventHandler(this, &PaintForm::buttonCloseCreateCanvas_Click);
 			// 
 			// buttonCreate
 			// 
@@ -842,27 +905,27 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			this->buttonCreate->UseVisualStyleBackColor = true;
 			this->buttonCreate->Click += gcnew System::EventHandler(this, &PaintForm::buttonCreate_Click);
 			// 
-			// label1
+			// labelCreateCanvasHeight
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
-			this->label1->Location = System::Drawing::Point(56, 55);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(49, 15);
-			this->label1->TabIndex = 12;
-			this->label1->Text = L"Height";
-			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->labelCreateCanvasHeight->AutoSize = true;
+			this->labelCreateCanvasHeight->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
+			this->labelCreateCanvasHeight->Location = System::Drawing::Point(45, 55);
+			this->labelCreateCanvasHeight->Name = L"labelCreateCanvasHeight";
+			this->labelCreateCanvasHeight->Size = System::Drawing::Size(49, 15);
+			this->labelCreateCanvasHeight->TabIndex = 12;
+			this->labelCreateCanvasHeight->Text = L"Height";
+			this->labelCreateCanvasHeight->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// label2
+			// labelCreateCanvasWidth
 			// 
-			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
-			this->label2->Location = System::Drawing::Point(62, 29);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(43, 15);
-			this->label2->TabIndex = 11;
-			this->label2->Text = L"Width";
-			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->labelCreateCanvasWidth->AutoSize = true;
+			this->labelCreateCanvasWidth->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
+			this->labelCreateCanvasWidth->Location = System::Drawing::Point(45, 29);
+			this->labelCreateCanvasWidth->Name = L"labelCreateCanvasWidth";
+			this->labelCreateCanvasWidth->Size = System::Drawing::Size(43, 15);
+			this->labelCreateCanvasWidth->TabIndex = 11;
+			this->labelCreateCanvasWidth->Text = L"Width";
+			this->labelCreateCanvasWidth->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// numericUpDownCreateHeight
 			// 
@@ -886,7 +949,7 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			// 
 			// groupBoxSoundDiagram
 			// 
-			this->groupBoxSoundDiagram->Controls->Add(this->label5);
+			this->groupBoxSoundDiagram->Controls->Add(this->labelSoundDiagramOctaveSheet);
 			this->groupBoxSoundDiagram->Controls->Add(this->pictureBoxOctaveWhatChosen);
 			this->groupBoxSoundDiagram->Controls->Add(this->pictureBoxOctaveWhatPanel);
 			this->groupBoxSoundDiagram->Controls->Add(this->labelCurrentNodePlaying);
@@ -894,11 +957,11 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			this->groupBoxSoundDiagram->Controls->Add(this->buttonSoundDiagramClose);
 			this->groupBoxSoundDiagram->Controls->Add(this->buttonShowVisualisation);
 			this->groupBoxSoundDiagram->Controls->Add(this->numericUpDownSoundDiagramOctave);
-			this->groupBoxSoundDiagram->Controls->Add(this->label4);
-			this->groupBoxSoundDiagram->Controls->Add(this->label3);
+			this->groupBoxSoundDiagram->Controls->Add(this->labelSoundDiagramOctave);
+			this->groupBoxSoundDiagram->Controls->Add(this->labelSoundDiagramMusicalInstrument);
 			this->groupBoxSoundDiagram->Controls->Add(this->comboBoxSoundDiagramInstrument);
 			this->groupBoxSoundDiagram->Controls->Add(this->pictureBoxSoundDiagram);
-			this->groupBoxSoundDiagram->Location = System::Drawing::Point(6, 153);
+			this->groupBoxSoundDiagram->Location = System::Drawing::Point(6, 151);
 			this->groupBoxSoundDiagram->Name = L"groupBoxSoundDiagram";
 			this->groupBoxSoundDiagram->Size = System::Drawing::Size(960, 240);
 			this->groupBoxSoundDiagram->TabIndex = 4;
@@ -906,8 +969,142 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			this->groupBoxSoundDiagram->Text = L"Sound diagram";
 			this->groupBoxSoundDiagram->Visible = false;
 			// 
+			// labelSoundDiagramOctaveSheet
+			// 
+			this->labelSoundDiagramOctaveSheet->AutoSize = true;
+			this->labelSoundDiagramOctaveSheet->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->labelSoundDiagramOctaveSheet->Location = System::Drawing::Point(368, 20);
+			this->labelSoundDiagramOctaveSheet->Name = L"labelSoundDiagramOctaveSheet";
+			this->labelSoundDiagramOctaveSheet->Size = System::Drawing::Size(151, 25);
+			this->labelSoundDiagramOctaveSheet->TabIndex = 20;
+			this->labelSoundDiagramOctaveSheet->Text = L"Octave sheet";
+			// 
+			// pictureBoxOctaveWhatChosen
+			// 
+			this->pictureBoxOctaveWhatChosen->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->pictureBoxOctaveWhatChosen->Location = System::Drawing::Point(368, 144);
+			this->pictureBoxOctaveWhatChosen->Name = L"pictureBoxOctaveWhatChosen";
+			this->pictureBoxOctaveWhatChosen->Size = System::Drawing::Size(580, 14);
+			this->pictureBoxOctaveWhatChosen->TabIndex = 19;
+			this->pictureBoxOctaveWhatChosen->TabStop = false;
+			// 
+			// pictureBoxOctaveWhatPanel
+			// 
+			this->pictureBoxOctaveWhatPanel->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->pictureBoxOctaveWhatPanel->Location = System::Drawing::Point(368, 48);
+			this->pictureBoxOctaveWhatPanel->Name = L"pictureBoxOctaveWhatPanel";
+			this->pictureBoxOctaveWhatPanel->Size = System::Drawing::Size(580, 90);
+			this->pictureBoxOctaveWhatPanel->TabIndex = 18;
+			this->pictureBoxOctaveWhatPanel->TabStop = false;
+			// 
+			// labelCurrentNodePlaying
+			// 
+			this->labelCurrentNodePlaying->AutoSize = true;
+			this->labelCurrentNodePlaying->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Italic,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->labelCurrentNodePlaying->Location = System::Drawing::Point(167, 184);
+			this->labelCurrentNodePlaying->Name = L"labelCurrentNodePlaying";
+			this->labelCurrentNodePlaying->Size = System::Drawing::Size(135, 16);
+			this->labelCurrentNodePlaying->TabIndex = 17;
+			this->labelCurrentNodePlaying->Text = L"Current note playing:#";
+			this->labelCurrentNodePlaying->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelOctaveWhat
+			// 
+			this->labelOctaveWhat->AutoSize = true;
+			this->labelOctaveWhat->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->labelOctaveWhat->Location = System::Drawing::Point(62, 108);
+			this->labelOctaveWhat->Name = L"labelOctaveWhat";
+			this->labelOctaveWhat->Size = System::Drawing::Size(74, 13);
+			this->labelOctaveWhat->TabIndex = 16;
+			this->labelOctaveWhat->Text = L"Contre octave";
+			this->labelOctaveWhat->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// buttonSoundDiagramClose
+			// 
+			this->buttonSoundDiagramClose->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->buttonSoundDiagramClose->Location = System::Drawing::Point(9, 20);
+			this->buttonSoundDiagramClose->Name = L"buttonSoundDiagramClose";
+			this->buttonSoundDiagramClose->Size = System::Drawing::Size(25, 25);
+			this->buttonSoundDiagramClose->TabIndex = 15;
+			this->buttonSoundDiagramClose->Text = L"X";
+			this->buttonSoundDiagramClose->UseVisualStyleBackColor = false;
+			this->buttonSoundDiagramClose->Click += gcnew System::EventHandler(this, &PaintForm::buttonSoundDiagramClose_Click);
+			// 
+			// buttonShowVisualisation
+			// 
+			this->buttonShowVisualisation->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Bold,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->buttonShowVisualisation->Location = System::Drawing::Point(6, 134);
+			this->buttonShowVisualisation->Name = L"buttonShowVisualisation";
+			this->buttonShowVisualisation->Size = System::Drawing::Size(129, 82);
+			this->buttonShowVisualisation->TabIndex = 14;
+			this->buttonShowVisualisation->Text = L"Show visualisation";
+			this->buttonShowVisualisation->UseVisualStyleBackColor = true;
+			this->buttonShowVisualisation->Click += gcnew System::EventHandler(this, &PaintForm::buttonShowVisualisation_Click);
+			// 
+			// numericUpDownSoundDiagramOctave
+			// 
+			this->numericUpDownSoundDiagramOctave->Location = System::Drawing::Point(5, 108);
+			this->numericUpDownSoundDiagramOctave->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
+			this->numericUpDownSoundDiagramOctave->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
+			this->numericUpDownSoundDiagramOctave->Name = L"numericUpDownSoundDiagramOctave";
+			this->numericUpDownSoundDiagramOctave->Size = System::Drawing::Size(51, 20);
+			this->numericUpDownSoundDiagramOctave->TabIndex = 13;
+			this->numericUpDownSoundDiagramOctave->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
+			this->numericUpDownSoundDiagramOctave->ValueChanged += gcnew System::EventHandler(this, &PaintForm::numericUpDownSoundDiagramOctave_ValueChanged);
+			// 
+			// labelSoundDiagramOctave
+			// 
+			this->labelSoundDiagramOctave->AutoSize = true;
+			this->labelSoundDiagramOctave->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
+			this->labelSoundDiagramOctave->Location = System::Drawing::Point(6, 90);
+			this->labelSoundDiagramOctave->Name = L"labelSoundDiagramOctave";
+			this->labelSoundDiagramOctave->Size = System::Drawing::Size(50, 15);
+			this->labelSoundDiagramOctave->TabIndex = 12;
+			this->labelSoundDiagramOctave->Text = L"Octave";
+			this->labelSoundDiagramOctave->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelSoundDiagramMusicalInstrument
+			// 
+			this->labelSoundDiagramMusicalInstrument->AutoSize = true;
+			this->labelSoundDiagramMusicalInstrument->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
+			this->labelSoundDiagramMusicalInstrument->Location = System::Drawing::Point(6, 48);
+			this->labelSoundDiagramMusicalInstrument->Name = L"labelSoundDiagramMusicalInstrument";
+			this->labelSoundDiagramMusicalInstrument->Size = System::Drawing::Size(129, 15);
+			this->labelSoundDiagramMusicalInstrument->TabIndex = 11;
+			this->labelSoundDiagramMusicalInstrument->Text = L"Musical instrument";
+			this->labelSoundDiagramMusicalInstrument->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// comboBoxSoundDiagramInstrument
+			// 
+			this->comboBoxSoundDiagramInstrument->FormattingEnabled = true;
+			this->comboBoxSoundDiagramInstrument->Items->AddRange(gcnew cli::array< System::Object^  >(4) {
+				L"None", L"Marimba", L"WoodWind",
+					L"Piano"
+			});
+			this->comboBoxSoundDiagramInstrument->Location = System::Drawing::Point(6, 66);
+			this->comboBoxSoundDiagramInstrument->Name = L"comboBoxSoundDiagramInstrument";
+			this->comboBoxSoundDiagramInstrument->Size = System::Drawing::Size(129, 21);
+			this->comboBoxSoundDiagramInstrument->TabIndex = 1;
+			this->comboBoxSoundDiagramInstrument->Text = L"None";
+			this->comboBoxSoundDiagramInstrument->SelectedIndexChanged += gcnew System::EventHandler(this, &PaintForm::comboBoxSoundDiagramInstrument_SelectedIndexChanged);
+			// 
+			// pictureBoxSoundDiagram
+			// 
+			this->pictureBoxSoundDiagram->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->pictureBoxSoundDiagram->Location = System::Drawing::Point(170, 20);
+			this->pictureBoxSoundDiagram->Name = L"pictureBoxSoundDiagram";
+			this->pictureBoxSoundDiagram->Size = System::Drawing::Size(192, 161);
+			this->pictureBoxSoundDiagram->TabIndex = 0;
+			this->pictureBoxSoundDiagram->TabStop = false;
+			// 
 			// groupBoxExerciseKnowledge
 			// 
+			this->groupBoxExerciseKnowledge->Controls->Add(this->buttonCloseTest);
 			this->groupBoxExerciseKnowledge->Controls->Add(this->pictureBoxRightInstrument);
 			this->groupBoxExerciseKnowledge->Controls->Add(this->labelRightOctave);
 			this->groupBoxExerciseKnowledge->Controls->Add(this->labelWaitingNotification);
@@ -917,33 +1114,34 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			this->groupBoxExerciseKnowledge->Controls->Add(this->buttonStartGame);
 			this->groupBoxExerciseKnowledge->Font = (gcnew System::Drawing::Font(L"Consolas", 14, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->groupBoxExerciseKnowledge->Location = System::Drawing::Point(6, 153);
+			this->groupBoxExerciseKnowledge->Location = System::Drawing::Point(6, 161);
 			this->groupBoxExerciseKnowledge->Margin = System::Windows::Forms::Padding(2);
 			this->groupBoxExerciseKnowledge->Name = L"groupBoxExerciseKnowledge";
 			this->groupBoxExerciseKnowledge->Padding = System::Windows::Forms::Padding(2);
-			this->groupBoxExerciseKnowledge->Size = System::Drawing::Size(533, 267);
+			this->groupBoxExerciseKnowledge->Size = System::Drawing::Size(551, 267);
 			this->groupBoxExerciseKnowledge->TabIndex = 5;
 			this->groupBoxExerciseKnowledge->TabStop = false;
-			this->groupBoxExerciseKnowledge->Text = L"Testing";
+			this->groupBoxExerciseKnowledge->Text = L"Test";
 			this->groupBoxExerciseKnowledge->Visible = false;
 			// 
-			// labelRightOctave
+			// buttonCloseTest
 			// 
-			this->labelRightOctave->AutoSize = true;
-			this->labelRightOctave->Font = (gcnew System::Drawing::Font(L"Franklin Gothic Demi", 14, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
+			this->buttonCloseTest->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->buttonCloseTest->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelRightOctave->Location = System::Drawing::Point(212, 184);
-			this->labelRightOctave->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
-			this->labelRightOctave->Name = L"labelRightOctave";
-			this->labelRightOctave->Size = System::Drawing::Size(115, 24);
-			this->labelRightOctave->TabIndex = 6;
-			this->labelRightOctave->Text = L"Right octave";
-			this->labelRightOctave->Visible = false;
+			this->buttonCloseTest->Location = System::Drawing::Point(6, 27);
+			this->buttonCloseTest->Name = L"buttonCloseTest";
+			this->buttonCloseTest->Size = System::Drawing::Size(25, 25);
+			this->buttonCloseTest->TabIndex = 16;
+			this->buttonCloseTest->Text = L"X";
+			this->buttonCloseTest->UseVisualStyleBackColor = false;
+			this->buttonCloseTest->Click += gcnew System::EventHandler(this, &PaintForm::buttonCloseTest_Click);
 			// 
 			// pictureBoxRightInstrument
 			// 
 			this->pictureBoxRightInstrument->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->pictureBoxRightInstrument->Location = System::Drawing::Point(211, 43);
+			this->pictureBoxRightInstrument->Location = System::Drawing::Point(206, 55);
 			this->pictureBoxRightInstrument->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBoxRightInstrument->Name = L"pictureBoxRightInstrument";
 			this->pictureBoxRightInstrument->Size = System::Drawing::Size(300, 133);
@@ -952,12 +1150,25 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			this->pictureBoxRightInstrument->TabStop = false;
 			this->pictureBoxRightInstrument->Visible = false;
 			// 
+			// labelRightOctave
+			// 
+			this->labelRightOctave->AutoSize = true;
+			this->labelRightOctave->Font = (gcnew System::Drawing::Font(L"Franklin Gothic Demi", 14, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->labelRightOctave->Location = System::Drawing::Point(216, 190);
+			this->labelRightOctave->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->labelRightOctave->Name = L"labelRightOctave";
+			this->labelRightOctave->Size = System::Drawing::Size(115, 24);
+			this->labelRightOctave->TabIndex = 6;
+			this->labelRightOctave->Text = L"Right octave";
+			this->labelRightOctave->Visible = false;
+			// 
 			// labelWaitingNotification
 			// 
 			this->labelWaitingNotification->AutoSize = true;
 			this->labelWaitingNotification->Font = (gcnew System::Drawing::Font(L"Elephant", 14, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->labelWaitingNotification->Location = System::Drawing::Point(242, 19);
+			this->labelWaitingNotification->Location = System::Drawing::Point(248, 24);
 			this->labelWaitingNotification->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->labelWaitingNotification->Name = L"labelWaitingNotification";
 			this->labelWaitingNotification->Size = System::Drawing::Size(219, 25);
@@ -998,8 +1209,8 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			// 
 			this->comboBoxChoiseOctave->FormattingEnabled = true;
 			this->comboBoxChoiseOctave->Items->AddRange(gcnew cli::array< System::Object^  >(8) {
-				L"None", L"Counter Octave", L"Big Octave",
-					L"Small Octave", L"First Octave", L"Second Octave", L"Third Octave", L"Fourth Octave"
+				L"None", L"Contra octave", L"Great octave",
+					L"Small octave", L"One-line octave", L"Two-line octave", L"Three-line octave", L"Four-line octave"
 			});
 			this->comboBoxChoiseOctave->Location = System::Drawing::Point(5, 63);
 			this->comboBoxChoiseOctave->Margin = System::Windows::Forms::Padding(2);
@@ -1025,7 +1236,7 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			// buttonCheckResult
 			// 
 			this->buttonCheckResult->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->buttonCheckResult->Font = (gcnew System::Drawing::Font(L"Goudy Old Style", 14, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->buttonCheckResult->Font = (gcnew System::Drawing::Font(L"Goudy Old Style", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->buttonCheckResult->Location = System::Drawing::Point(6, 175);
 			this->buttonCheckResult->Margin = System::Windows::Forms::Padding(2);
@@ -1044,147 +1255,14 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			this->buttonStartGame->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->buttonStartGame->Font = (gcnew System::Drawing::Font(L"Goudy Old Style", 14, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->buttonStartGame->Location = System::Drawing::Point(6, 26);
+			this->buttonStartGame->Location = System::Drawing::Point(42, 25);
 			this->buttonStartGame->Margin = System::Windows::Forms::Padding(2);
 			this->buttonStartGame->Name = L"buttonStartGame";
-			this->buttonStartGame->Size = System::Drawing::Size(133, 33);
+			this->buttonStartGame->Size = System::Drawing::Size(133, 35);
 			this->buttonStartGame->TabIndex = 0;
 			this->buttonStartGame->Text = L"Start game";
 			this->buttonStartGame->UseVisualStyleBackColor = false;
 			this->buttonStartGame->Click += gcnew System::EventHandler(this, &PaintForm::buttonStartGame_Click);
-			// 
-			// label5
-			// 
-			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->label5->Location = System::Drawing::Point(368, 20);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(151, 25);
-			this->label5->TabIndex = 20;
-			this->label5->Text = L"Octave sheet";
-			// 
-			// pictureBoxOctaveWhatChosen
-			// 
-			this->pictureBoxOctaveWhatChosen->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->pictureBoxOctaveWhatChosen->Location = System::Drawing::Point(368, 144);
-			this->pictureBoxOctaveWhatChosen->Name = L"pictureBoxOctaveWhatChosen";
-			this->pictureBoxOctaveWhatChosen->Size = System::Drawing::Size(580, 14);
-			this->pictureBoxOctaveWhatChosen->TabIndex = 19;
-			this->pictureBoxOctaveWhatChosen->TabStop = false;
-			// 
-			// pictureBoxOctaveWhatPanel
-			// 
-			this->pictureBoxOctaveWhatPanel->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->pictureBoxOctaveWhatPanel->Location = System::Drawing::Point(368, 48);
-			this->pictureBoxOctaveWhatPanel->Name = L"pictureBoxOctaveWhatPanel";
-			this->pictureBoxOctaveWhatPanel->Size = System::Drawing::Size(580, 90);
-			this->pictureBoxOctaveWhatPanel->TabIndex = 18;
-			this->pictureBoxOctaveWhatPanel->TabStop = false;
-			// 
-			// labelCurrentNodePlaying
-			// 
-			this->labelCurrentNodePlaying->AutoSize = true;
-			this->labelCurrentNodePlaying->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Italic,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->labelCurrentNodePlaying->Location = System::Drawing::Point(167, 184);
-			this->labelCurrentNodePlaying->Name = L"labelCurrentNodePlaying";
-			this->labelCurrentNodePlaying->Size = System::Drawing::Size(135, 16);
-			this->labelCurrentNodePlaying->TabIndex = 17;
-			this->labelCurrentNodePlaying->Text = L"Current note playing:#";
-			this->labelCurrentNodePlaying->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// labelOctaveWhat
-			// 
-			this->labelOctaveWhat->AutoSize = true;
-			this->labelOctaveWhat->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->labelOctaveWhat->Location = System::Drawing::Point(62, 108);
-			this->labelOctaveWhat->Name = L"labelOctaveWhat";
-			this->labelOctaveWhat->Size = System::Drawing::Size(35, 16);
-			this->labelOctaveWhat->TabIndex = 16;
-			this->labelOctaveWhat->Text = L"####";
-			this->labelOctaveWhat->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// buttonSoundDiagramClose
-			// 
-			this->buttonSoundDiagramClose->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)),
-				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->buttonSoundDiagramClose->Location = System::Drawing::Point(9, 20);
-			this->buttonSoundDiagramClose->Name = L"buttonSoundDiagramClose";
-			this->buttonSoundDiagramClose->Size = System::Drawing::Size(25, 25);
-			this->buttonSoundDiagramClose->TabIndex = 15;
-			this->buttonSoundDiagramClose->Text = L"X";
-			this->buttonSoundDiagramClose->UseVisualStyleBackColor = false;
-			this->buttonSoundDiagramClose->Click += gcnew System::EventHandler(this, &PaintForm::buttonSoundDiagramClose_Click);
-			// 
-			// buttonShowVisualisation
-			// 
-			this->buttonShowVisualisation->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->buttonShowVisualisation->Location = System::Drawing::Point(6, 134);
-			this->buttonShowVisualisation->Name = L"buttonShowVisualisation";
-			this->buttonShowVisualisation->Size = System::Drawing::Size(129, 82);
-			this->buttonShowVisualisation->TabIndex = 14;
-			this->buttonShowVisualisation->Text = L"Show visualisation";
-			this->buttonShowVisualisation->UseVisualStyleBackColor = true;
-			this->buttonShowVisualisation->Click += gcnew System::EventHandler(this, &PaintForm::buttonShowVisualisation_Click);
-			// 
-			// numericUpDownSoundDiagramOctave
-			// 
-			this->numericUpDownSoundDiagramOctave->Location = System::Drawing::Point(5, 108);
-			this->numericUpDownSoundDiagramOctave->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
-			this->numericUpDownSoundDiagramOctave->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
-			this->numericUpDownSoundDiagramOctave->Name = L"numericUpDownSoundDiagramOctave";
-			this->numericUpDownSoundDiagramOctave->Size = System::Drawing::Size(51, 20);
-			this->numericUpDownSoundDiagramOctave->TabIndex = 13;
-			this->numericUpDownSoundDiagramOctave->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
-			this->numericUpDownSoundDiagramOctave->ValueChanged += gcnew System::EventHandler(this, &PaintForm::numericUpDownSoundDiagramOctave_ValueChanged);
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
-			this->label4->Location = System::Drawing::Point(6, 90);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(50, 15);
-			this->label4->TabIndex = 12;
-			this->label4->Text = L"Octave";
-			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold));
-			this->label3->Location = System::Drawing::Point(6, 48);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(129, 15);
-			this->label3->TabIndex = 11;
-			this->label3->Text = L"Musical instrument";
-			this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// comboBoxSoundDiagramInstrument
-			// 
-			this->comboBoxSoundDiagramInstrument->FormattingEnabled = true;
-			this->comboBoxSoundDiagramInstrument->Items->AddRange(gcnew cli::array< System::Object^  >(4) {
-				L"None", L"Marimba", L"WoodWind",
-					L"Piano"
-			});
-			this->comboBoxSoundDiagramInstrument->Location = System::Drawing::Point(6, 66);
-			this->comboBoxSoundDiagramInstrument->Name = L"comboBoxSoundDiagramInstrument";
-			this->comboBoxSoundDiagramInstrument->Size = System::Drawing::Size(129, 21);
-			this->comboBoxSoundDiagramInstrument->TabIndex = 1;
-			this->comboBoxSoundDiagramInstrument->Text = L"None";
-			this->comboBoxSoundDiagramInstrument->SelectedIndexChanged += gcnew System::EventHandler(this, &PaintForm::comboBoxSoundDiagramInstrument_SelectedIndexChanged);
-			// 
-			// pictureBoxSoundDiagram
-			// 
-			this->pictureBoxSoundDiagram->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->pictureBoxSoundDiagram->Location = System::Drawing::Point(170, 20);
-			this->pictureBoxSoundDiagram->Name = L"pictureBoxSoundDiagram";
-			this->pictureBoxSoundDiagram->Size = System::Drawing::Size(192, 161);
-			this->pictureBoxSoundDiagram->TabIndex = 0;
-			this->pictureBoxSoundDiagram->TabStop = false;
 			// 
 			// PaintForm
 			// 
@@ -1237,14 +1315,14 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDownCreateWidth))->EndInit();
 			this->groupBoxSoundDiagram->ResumeLayout(false);
 			this->groupBoxSoundDiagram->PerformLayout();
-			this->groupBoxExerciseKnowledge->ResumeLayout(false);
-			this->groupBoxExerciseKnowledge->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRightInstrument))->EndInit();
-			this->groupBoxInputAnswer->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxOctaveWhatChosen))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxOctaveWhatPanel))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDownSoundDiagramOctave))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxSoundDiagram))->EndInit();
+			this->groupBoxExerciseKnowledge->ResumeLayout(false);
+			this->groupBoxExerciseKnowledge->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxRightInstrument))->EndInit();
+			this->groupBoxInputAnswer->ResumeLayout(false);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -1264,10 +1342,12 @@ private: System::Windows::Forms::PictureBox^ pictureBoxRightInstrument;
 		Bitmap^ image_temp;
 		int instrument_identifier;
 		int octave_identifier;
+		String^ localization_identifier;
 		
 	//Событие при запуске формы
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) 
 	{
+		localization_identifier = "English";
 		size = 1;
 		mouse_pressed = false;
 		X = 0;
@@ -1320,17 +1400,23 @@ private: System::Void pictureBoxCanvas_MouseMove(System::Object^ sender, System:
 private: System::Void pictureBoxCanvas_MouseUp(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e);
 private: System::Void pictureBoxCanvas_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e);
 private: System::Void createToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
-private: System::Void labelLength_Click(System::Object^ sender, System::EventArgs^ e) {
-}
+private: System::Void labelLength_Click(System::Object^ sender, System::EventArgs^ e) {}
+	//
 private: System::Void buttonCreate_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void buttonSoundDiagramClose_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void comboBoxSoundDiagramInstrument_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e);
 private: System::Void buttonShowVisualisation_Click(System::Object^ sender, System::EventArgs^ e);
-private: System::Void groupBoxCreateCanvas_Enter(System::Object^ sender, System::EventArgs^ e) {
-}
+private: System::Void groupBoxCreateCanvas_Enter(System::Object^ sender, System::EventArgs^ e) {}	
+	//Тест
 private: System::Void numericUpDownSoundDiagramOctave_ValueChanged(System::Object^ sender, System::EventArgs^ e);
 private: System::Void exerciseToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void buttonStartGame_Click(System::Object^ sender, System::EventArgs^ e);
 private: System::Void buttonCheckResult_Click(System::Object^ sender, System::EventArgs^ e);
+	//Локализация
+private: System::Void englishToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void russianToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void testToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void buttonCloseTest_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void buttonCloseCreateCanvas_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }

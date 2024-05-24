@@ -9,6 +9,13 @@ System::Void Risovalka::PaintForm::saveAsToolStripMenuItem_Click(System::Object^
 	}
 	Bitmap^ img_to_save = gcnew Bitmap(pictureBoxCanvas->Image);
 	img_to_save->Save(fname);
-	MessageBox::Show("Picture was saved.\nAdress: " + fname);
+	if(localization_identifier == "English")
+	{
+		MessageBox::Show("Picture was saved.\nAdress: " + fname);
+	}
+	if (localization_identifier == "Russian")
+	{
+		MessageBox::Show("Изображение было сохранено.\nАдрес: " + fname);
+	}
 	return System::Void();
 }

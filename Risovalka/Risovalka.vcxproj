@@ -137,6 +137,7 @@
     <ClCompile Include="Events\Brush options events\Shape\radioButtonSquare_CheckedChanged.cpp" />
     <ClCompile Include="Events\Brush options events\Shape\radioButtonTriangle_CheckedChanged.cpp" />
     <ClCompile Include="Events\Brush options events\Sound\comboBoxInstruments_SelectedIndexChanged.cpp" />
+    <ClCompile Include="Events\buttonCloseCreateCanvas_Click.cpp" />
     <ClCompile Include="Events\buttonCreate_Click.cpp" />
     <ClCompile Include="Events\Canvas events\pictureBoxCanvas_MouseDown.cpp" />
     <ClCompile Include="Events\Canvas events\pictureBoxCanvas_MouseMove.cpp" />
@@ -148,6 +149,8 @@
     <ClCompile Include="Events\Canvas menu\createToolStripMenuItem_Click.cpp" />
     <ClCompile Include="Events\Canvas menu\openFileToolStripMenuItem_Click.cpp" />
     <ClCompile Include="Events\Canvas menu\saveAsToolStripMenuItem_Click.cpp" />
+    <ClCompile Include="Events\Localization events\englishToolStripMenuItem.cpp" />
+    <ClCompile Include="Events\Localization events\russianToolStripMenuItem.cpp" />
     <ClCompile Include="Events\Sound menu\freeToolStripMenuItem_Click.cpp" />
     <ClCompile Include="Events\Sound menu\steptsToolStripMenuItem_Click.cpp" />
     <ClCompile Include="Events\Sound Visualisation\buttonShowVisualisation_Click.cpp" />
@@ -157,8 +160,10 @@
     <ClCompile Include="Events\Test knowledge\buttonCheckResult_Click.cpp">
       <DeploymentContent>false</DeploymentContent>
     </ClCompile>
+    <ClCompile Include="Events\Test knowledge\buttonCloseTest_Click.cpp" />
     <ClCompile Include="Events\Test knowledge\buttonStartGame_Click.cpp" />
     <ClCompile Include="Events\Test knowledge\exerciseToolStripMenuItem_Click.cpp" />
+    <ClCompile Include="Events\Test knowledge\testToolStripMenuItem_Click.cpp" />
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>

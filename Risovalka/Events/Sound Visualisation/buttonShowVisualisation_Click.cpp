@@ -204,378 +204,757 @@ System::Void Risovalka::PaintForm::buttonShowVisualisation_Click(System::Object^
 	}
 	pictureBoxSoundDiagram->Refresh();
 	pictureBoxSoundDiagram->Invalidate();
-	if(comboBoxSoundDiagramInstrument->Text == "None")
+	if (localization_identifier == "English")
 	{
-		return;
-	}
-	if (comboBoxSoundDiagramInstrument->Text == "Marimba")
-	{
-		if(numericUpDownSoundDiagramOctave->Value == 1)
+		if (comboBoxSoundDiagramInstrument->Text == "None")
 		{
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1G.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:G";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1F.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:F";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			labelCurrentNodePlaying->Text = "Current note playing:#";
-			labelCurrentNodePlaying->Refresh();
+			return;
 		}
-		if (numericUpDownSoundDiagramOctave->Value == 2)
+		if (comboBoxSoundDiagramInstrument->Text == "Marimba")
 		{
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2G.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:G";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2F.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:F";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			labelCurrentNodePlaying->Text = "Current note playing:#";
-			labelCurrentNodePlaying->Refresh();
+			if (numericUpDownSoundDiagramOctave->Value == 1)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1G.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:G";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1F.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:F";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Current note playing:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 2)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2G.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:G";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2F.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:F";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Current note playing:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 3)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3G.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:G";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3F.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:F";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Current note playing:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			return;
 		}
-		if (numericUpDownSoundDiagramOctave->Value == 3)
+		if (comboBoxSoundDiagramInstrument->Text == "Piano")
 		{
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3G.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:G";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3F.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:F";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			labelCurrentNodePlaying->Text = "Current note playing:#";
-			labelCurrentNodePlaying->Refresh();
-		}
-		return;
-	}
-	if (comboBoxSoundDiagramInstrument->Text == "Piano")
-	{
-		if (numericUpDownSoundDiagramOctave->Value == 1)
-		{
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1C.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1G.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1F.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1C.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1C.wav");
-			audio_feedback->PlaySync();
-		}
-		if (numericUpDownSoundDiagramOctave->Value == 2)
-		{
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2C.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2G.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2F.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2C.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2C.wav");
-			audio_feedback->PlaySync();
-		}
-		if (numericUpDownSoundDiagramOctave->Value == 3)
-		{
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3C.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3G.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3F.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3C.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3C.wav");
-			audio_feedback->PlaySync();
-		}
-		if (numericUpDownSoundDiagramOctave->Value == 4)
-		{
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4C.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4G.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4F.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4C.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4C.wav");
-			audio_feedback->PlaySync();
+			if (numericUpDownSoundDiagramOctave->Value == 1)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1G.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1F.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1C.wav");
+				audio_feedback->PlaySync();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 2)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2G.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2F.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2C.wav");
+				audio_feedback->PlaySync();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 3)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3G.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3F.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3C.wav");
+				audio_feedback->PlaySync();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 4)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4G.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4F.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4C.wav");
+				audio_feedback->PlaySync();
 
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 5)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5G.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5F.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5C.wav");
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Current note playing:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 6)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6G.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:G";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6F.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:F";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Current note playing:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 7)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7G.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:G";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7F.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:F";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Current note playing:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			return;
 		}
-		if (numericUpDownSoundDiagramOctave->Value == 5)
+		if (comboBoxSoundDiagramInstrument->Text == "WoodWind")
 		{
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5C.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5G.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5A.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5F.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5C.wav");
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5C.wav");
-			audio_feedback->PlaySync();
-			labelCurrentNodePlaying->Text = "Current note playing:#";
-			labelCurrentNodePlaying->Refresh();
+			if (numericUpDownSoundDiagramOctave->Value == 4)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4G.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:G";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4F.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:F";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Current note playing:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 5)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5G.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:G";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5A.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5F.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:F";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5C.wav");
+				labelCurrentNodePlaying->Text = "Current note playing:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Current note playing:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			return;
 		}
-		if (numericUpDownSoundDiagramOctave->Value == 6)
-		{
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6G.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:G";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6F.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:F";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			labelCurrentNodePlaying->Text = "Current note playing:#";
-			labelCurrentNodePlaying->Refresh();
-		}
-		if (numericUpDownSoundDiagramOctave->Value == 7)
-		{
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7G.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:G";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7F.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:F";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			labelCurrentNodePlaying->Text = "Current note playing:#";
-			labelCurrentNodePlaying->Refresh();
-		}
-		return;
 	}
-	if (comboBoxSoundDiagramInstrument->Text == "WoodWind")
+	if (localization_identifier == "Russian")
 	{
-		if (numericUpDownSoundDiagramOctave->Value == 4)
+		if (comboBoxSoundDiagramInstrument->Text == "None")
 		{
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4G.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:G";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4F.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:F";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			labelCurrentNodePlaying->Text = "Current note playing:#";
-			labelCurrentNodePlaying->Refresh();
+			return;
 		}
-		if (numericUpDownSoundDiagramOctave->Value == 5)
+		if (comboBoxSoundDiagramInstrument->Text == "Маримба")
 		{
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5G.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:G";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5A.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:A";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5F.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:F";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5C.wav");
-			labelCurrentNodePlaying->Text = "Current note playing:C";
-			labelCurrentNodePlaying->Refresh();
-			audio_feedback->PlaySync();
-			labelCurrentNodePlaying->Text = "Current note playing:#";
-			labelCurrentNodePlaying->Refresh();
+			if (numericUpDownSoundDiagramOctave->Value == 1)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1G.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:G";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1F.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:F";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba1C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Играет нота:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 2)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2G.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:G";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2F.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:F";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba2C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Играет нота:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 3)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3G.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:G";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3F.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:F";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\MarimbaAll\\Marimba3C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Играет нота:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			return;
 		}
-		return;
+		if (comboBoxSoundDiagramInstrument->Text == "Флейта")
+		{
+			if (numericUpDownSoundDiagramOctave->Value == 4)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4G.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:G";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4F.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:F";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind4C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Играет нота:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 5)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5G.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:G";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5F.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:F";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\WoodWindAll\\WoodWind5C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Играет нота:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			return;
+		}
+		if (comboBoxSoundDiagramInstrument->Text == "Пианино")
+		{
+			if (numericUpDownSoundDiagramOctave->Value == 1)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1G.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1F.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano1C.wav");
+				audio_feedback->PlaySync();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 2)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2G.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2F.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano2C.wav");
+				audio_feedback->PlaySync();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 3)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3G.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3F.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano3C.wav");
+				audio_feedback->PlaySync();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 4)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4G.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4F.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano4C.wav");
+				audio_feedback->PlaySync();
+
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 5)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5G.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5A.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5F.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5C.wav");
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano5C.wav");
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Current note playing:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 6)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6G.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:G";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6F.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:F";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano6C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Играет нота:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			if (numericUpDownSoundDiagramOctave->Value == 7)
+			{
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7G.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:G";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7A.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:A";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7F.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:F";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				audio_feedback = gcnew SoundPlayer("..\\ColorMain\\PianoAll\\Piano7C.wav");
+				labelCurrentNodePlaying->Text = "Играет нота:C";
+				labelCurrentNodePlaying->Refresh();
+				audio_feedback->PlaySync();
+				labelCurrentNodePlaying->Text = "Играет нота:#";
+				labelCurrentNodePlaying->Refresh();
+			}
+			return;
+		}
 	}
 	return System::Void();
 }
