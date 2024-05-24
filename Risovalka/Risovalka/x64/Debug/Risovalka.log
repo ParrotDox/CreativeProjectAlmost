@@ -1,3 +1,54 @@
-﻿  saveAsToolStripMenuItem_Click.cpp
+﻿  ButtonBlue_Click.cpp
+  ButtonCyan_Click.cpp
+  ButtonGreen_Click.cpp
+  ButtonOrange_Click.cpp
+  ButtonPurple_Click.cpp
+  ButtonRed_Click.cpp
+  ButtonYellow_Click.cpp
+  numericUpDownBrushSize_ValueChanged.cpp
+  numericUpDownLength_ValueChanged.cpp
+C:\GIT\CreativeProjectAlmost\Risovalka\Events\Brush options events\Shape\numericUpDownBrushSize_ValueChanged.cpp(4,31): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\GIT\CreativeProjectAlmost\Risovalka\Events\Brush options events\Shape\numericUpDownBrushSize_ValueChanged.cpp(5,25): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  numericUpDownWidth_ValueChanged.cpp
+  radioButtonCircle_CheckedChanged.cpp
+  radioButtonDraw_CheckedChanged.cpp
+  radioButtonErase_CheckedChanged.cpp
+  radioButtonLine_CheckedChanged.cpp
+  radioButtonSquare_CheckedChanged.cpp
+  radioButtonTriangle_CheckedChanged.cpp
+  comboBoxInstruments_SelectedIndexChanged.cpp
+  pictureBoxCanvas_MouseDown.cpp
+  pictureBoxCanvas_MouseMove.cpp
+  pictureBoxCanvas_MouseUp.cpp
+  Создание кода...
+  Компиляция...
+  pictureBoxCanvas_Paint.cpp
+  pictureBoxCanvas_SizeChanged.cpp
+  canvasToolStripMenuItem_Click.cpp
+  clearCanvasToolStripMenuItem_Click.cpp
+  createToolStripMenuItem_Click.cpp
+  openFileToolStripMenuItem_Click.cpp
+  saveAsToolStripMenuItem_Click.cpp
+  englishToolStripMenuItem.cpp
+  russianToolStripMenuItem.cpp
+  buttonShowVisualisation_Click.cpp
+  buttonSoundDiagram_Click.cpp
+  comboBoxSoundDiagramInstrument_SelectedIndexChanged.cpp
+  numericUpDownSoundDiagramOctave_ValueChanged.cpp
+  freeToolStripMenuItem_Click.cpp
+  steptsToolStripMenuItem_Click.cpp
+  buttonCheckResult_Click.cpp
+  buttonCloseTest_Click.cpp
+  buttonStartGame_Click.cpp
+C:\GIT\CreativeProjectAlmost\Risovalka\Events\Test knowledge\buttonStartGame_Click.cpp(16,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  exerciseToolStripMenuItem_Click.cpp
+  testToolStripMenuItem_Click.cpp
+  Создание кода...
+  Компиляция...
+  buttonCloseCreateCanvas_Click.cpp
+  buttonCreate_Click.cpp
+  MyForm.cpp
+C:\GIT\CreativeProjectAlmost\Risovalka\MyForm.cpp(11,1): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
+  Создание кода...
   ButtonPurple_Click.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   Risovalka.vcxproj -> C:\GIT\CreativeProjectAlmost\Risovalka\x64\Debug\Risovalka.exe

@@ -22,6 +22,7 @@ System::Void  Risovalka::PaintForm::russianToolStripMenuItem_Click(System::Objec
 	//2.2
 	groupBoxSoundDiagram->Text = "Звуковая диаграмма";
 	labelSoundDiagramMusicalInstrument->Text = "Муз.инструмент";
+	labelOctaveWhat->Text = "Контроктава";
 	labelSoundDiagramOctave->Text = "Октава";
 	buttonShowVisualisation->Text = "Вывести визуализацию";
 	labelSoundDiagramOctaveSheet->Text = "Октавный лист";
@@ -33,8 +34,9 @@ System::Void  Risovalka::PaintForm::russianToolStripMenuItem_Click(System::Objec
 	comboBoxSoundDiagramInstrument->Items->Add("Пианино");
 	//3
 	exerciseToolStripMenuItem->Text = "Тестирование";
+	testToolStripMenuItem->Text = "Угадайка";
 	//3.3
-	groupBoxExerciseKnowledge->Text = "Тест";
+	groupBoxExerciseKnowledge->Text = "Угадайка";
 	buttonStartGame->Text = "Начать игру";
 	groupBoxInputAnswer->Text = "Ввести ответ";
 

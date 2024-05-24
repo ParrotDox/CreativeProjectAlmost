@@ -370,7 +370,7 @@ private: System::Windows::Forms::Button^ buttonCloseCreateCanvas;
 			// testToolStripMenuItem
 			// 
 			this->testToolStripMenuItem->Name = L"testToolStripMenuItem";
-			this->testToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->testToolStripMenuItem->Size = System::Drawing::Size(94, 22);
 			this->testToolStripMenuItem->Text = L"Test";
 			this->testToolStripMenuItem->Click += gcnew System::EventHandler(this, &PaintForm::testToolStripMenuItem_Click);
 			// 
@@ -1114,7 +1114,7 @@ private: System::Windows::Forms::Button^ buttonCloseCreateCanvas;
 			this->groupBoxExerciseKnowledge->Controls->Add(this->buttonStartGame);
 			this->groupBoxExerciseKnowledge->Font = (gcnew System::Drawing::Font(L"Consolas", 14, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->groupBoxExerciseKnowledge->Location = System::Drawing::Point(6, 161);
+			this->groupBoxExerciseKnowledge->Location = System::Drawing::Point(3, 406);
 			this->groupBoxExerciseKnowledge->Margin = System::Windows::Forms::Padding(2);
 			this->groupBoxExerciseKnowledge->Name = L"groupBoxExerciseKnowledge";
 			this->groupBoxExerciseKnowledge->Padding = System::Windows::Forms::Padding(2);

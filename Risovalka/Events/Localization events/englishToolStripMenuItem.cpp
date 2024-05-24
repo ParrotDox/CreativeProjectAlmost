@@ -22,6 +22,7 @@ System::Void  Risovalka::PaintForm::englishToolStripMenuItem_Click(System::Objec
 	//2.2
 	groupBoxSoundDiagram->Text = "Sound diagram";
 	labelSoundDiagramMusicalInstrument->Text = "Musical instrument";
+	labelOctaveWhat->Text = "Contre octave";
 	labelSoundDiagramOctave->Text = "Octave";
 	buttonShowVisualisation->Text = "Show visualization";
 	labelSoundDiagramOctaveSheet->Text = "Octave sheet";
@@ -33,8 +34,9 @@ System::Void  Risovalka::PaintForm::englishToolStripMenuItem_Click(System::Objec
 	comboBoxSoundDiagramInstrument->Items->Add("Piano");
 	//3
 	exerciseToolStripMenuItem->Text = "Test";
+	testToolStripMenuItem->Text = "Music Guesser";
 	//3.3
-	groupBoxExerciseKnowledge->Text = "Test";
+	groupBoxExerciseKnowledge->Text = "Music Guesser";
 	buttonStartGame->Text = "Start game";
 	groupBoxInputAnswer->Text = "Make a guess";
 
